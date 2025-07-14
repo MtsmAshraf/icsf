@@ -1,0 +1,103 @@
+.productsGrid .filter{
+    display: flex;
+    align-items: center;
+    /* border-bottom: 1px solid var(--logo-color); */
+    width: fit-content;
+    /* height: 28px; */
+    /* border-radius: 6px; */
+    margin-bottom: 40px;
+    /* margin-right: auto;
+    margin-left: auto; */
+    /* background-color: var(--main-color); */
+    /* box-shadow: var(--main-shadow); */
+    color: #fff;
+}
+.productsGrid.ar .filter{
+}
+.productsGrid .filter input{
+    position: absolute;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+.productsGrid .filter label{
+    cursor: pointer;
+    transition: var(--main-transition);
+    transition-duration: 0.1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 70px;
+}
+@media (max-width: 600px) {
+    .productsGrid .filter{
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: center;
+    }
+    .productsGrid .filter label{
+        width: 70px;
+    }
+}
+.productsGrid .filter label .icon{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productsGrid .filter label img{
+    color: var(--logo-color);
+    transition: var(--main-transition);
+    transition-duration: 0.1s;
+    font-size: 20px;
+    height: 40px;
+}
+.productsGrid .filter label span{
+    padding: 5px 10px;
+    background-color: var(--main-color);
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid var(--logo-color);
+    transition: var(--main-transition);
+    transition-duration: 0.1s;
+}
+/* .productsGrid.ar .filter div:nth-child(1) label{
+    font-size: 18px;
+}
+.productsGrid.ar .filter div:nth-child(2) label{
+    font-size: 18px;
+}
+.productsGrid.ar .filter div:nth-child(3) label{
+    font-size: 18px;
+} */
+.productsGrid .filter label:hover span,
+.productsGrid .filter div:has(input:checked) label span{
+    background-color: var(--logo-color);
+    border-bottom: 4px solid var(--main-color);
+}
+.productsGrid .filter label:hover img,
+.productsGrid .filter div:has(input:checked) label img{
+    height: 55px;    
+}
+@media (max-width: 767px) {
+    .productsGrid .filter{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media (max-width: 500px) {
+    .productsGrid .filter{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* .productsGrid .filter label{
+        width: 60px;
+    } */
+    .productsGrid .filter > div:first-child label{
+        width: 40px;
+    }
+    .productsGrid .filter label span{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,10 @@
+.products{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #ffeeff;
+
+}
+.products.ar{
+    direction: rtl;
+    font-family: "Tajawal", sans-serif;
+}

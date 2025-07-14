@@ -1,0 +1,103 @@
+.testimonials{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.testimonials.ar{
+    font-family: "Tajawal", sans-serif;
+}
+.testimonials h2{
+    text-align: center;
+    font-size: 40px;
+}
+.testimonials .swiper{
+    margin-top: 20px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    /* overflow: hidden; */
+}
+.testimonials .swiper .btns{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.testimonials .swiper .btns button{
+    background-color: #fff;
+    color: var(--text-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--text-color);
+    transition: var(--main-transition);
+    box-shadow: var(--main-shadow);
+    font-size: 20px;
+}
+.testimonials .swiper .btns button:hover{
+    background-color: var(--logo-color);
+    color: #fff;
+}
+.testimonials .swiper .SwiperSlide{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+.testimonials .swiper .SwiperSlide .img{
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--main-shadow);
+}
+.testimonials .swiper .SwiperSlide .img img{
+    object-fit: contain;
+}
+.testimonials .swiper .SwiperSlide .text{
+    width: 400px;
+    text-align: center;
+    box-shadow: var(--main-shadow);
+    border: 1px solid var(--logo-color);
+    padding: 20px;
+    border-radius: 0px 60px 60px 60px;
+    background-color: var(--bg-color);
+}
+.testimonials .pagination{
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.testimonials .pagination span{
+    background-color: var(--logo-color);
+}
+.testimonials .swiper .SwiperSlide .text p{
+    margin-bottom: 10px;
+}
+.testimonials .swiper .SwiperSlide .text span{
+    font-size: 14px;
+}
+@media (max-width: 767px) {
+    .testimonials h2{
+        font-size: 30px;
+    }
+    .testimonials .swiper .SwiperSlide{
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials .swiper .btns{
+        bottom: -80px;
+    }
+}

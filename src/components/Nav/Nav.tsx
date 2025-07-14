@@ -1,0 +1,35 @@
+import React from 'react'
+import styles from "./nav.module.css"
+import { useTranslations } from 'next-intl'
+// import { Link } from '@/i18n/routing'
+import { usePathname } from 'next/navigation'
+
+const Nav = ({
+    lo
+}: {
+    lo: string
+}) => {
+    const t = useTranslations("Header")
+    const pathname = usePathname()
+  return (
+    <nav className={lo === "ar" ? styles.nav + " " + styles.ar : styles.nav}>
+        <ul className={styles.links}>
+            <li>
+                <a className={pathname === `/${lo}` ? styles.active : ""} href={'#hero'}>{t("Nav.Home")}</a>
+            </li>
+            <li>
+                <a href={'#manufacturing'}>{t("Nav.Manufacturing")}</a>
+            </li>
+            <li>
+                <a href={'#products'}>{t("Nav.Products")}</a>
+            </li>
+            <li>
+                <a href={'#contact'}>{t("Nav.ContactUs")}</a>
+            </li>
+        </ul>
+        {/* <LangSwitch lo={lo}></LangSwitch> */}
+    </nav>
+  )
+}
+
+export default Nav

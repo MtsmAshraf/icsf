@@ -1,0 +1,24 @@
+.mainBtn{
+    /* border: 1px solid var(--logo-color);
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-family: "Poppins", sans-serif;
+    transition: var(--main-transition); */
+    background-color: #fff;
+    text-decoration: none;
+    padding: 4px 20px;
+    font-size: 20px;
+    border-radius: 20px 0px;
+    color: var(--main-color);
+    transition: var(--main-transition);
+    box-shadow: var(--sec-shadow);
+}
+.mainBtn.ar{
+    font-family: "Tajawal", sans-serif !important; 
+    direction: rtl;
+}
+.mainBtn:hover{
+    background-color: var(--logo-color);
+    color: #fff;
+}

@@ -1,0 +1,17 @@
+.floatContact{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 17;
+    background-color: transparent;
+    transition: var(--main-transition);
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.4s;
+    box-shadow: var(--main-shadow);
+}
+@media (max-width: 767px) {
+    .floatContact{
+        right: 50%;
+        transform: translateX(50%);
+    }
+}

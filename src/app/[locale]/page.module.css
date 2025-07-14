@@ -1,0 +1,8 @@
+/* 
+.page section:not(:first-of-type){
+  transition: var(--main-transition);
+  transition-timing-function: cubic-bezier(.34,.87,.56,.94);
+  transition-duration: 1.6s;
+  opacity: 0;
+  transform: translateY(100px)
+} */

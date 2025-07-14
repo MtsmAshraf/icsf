@@ -1,0 +1,190 @@
+{
+    "Header": {
+        "Logo": "Al-Mahdy",
+        "Nav": {
+            "Home": "Home",
+            "Products": "Products",
+            "Manufacturing": "Manufacturing",
+            "ContactUs": "Contact Us"
+        },
+        "VerticalNav": {
+            "Home": "Home",
+            "Manufacturing": "Manufacturing",
+            "FireSystem": "Fire Systems",
+            "Fields": "Fields",
+            "Brands": "Brands",
+            "Products": "Products",
+            "ContactUs": "Contact Us",
+            "Language": "Language",
+            "Sections": "Sections",
+            "Contact": "Contact"
+        }
+    },
+    "Footer": {
+        "P": "2025 Al-Mahdy",
+        "P2": "for Industrial Safety Services", 
+        "DevFooter": "Moatasim"
+    },
+    "MainBtn": {
+        "More": "More"
+    },
+    "HomePage": {
+        "Hero":{
+            "Heading": "Al-Mahdy",
+            "P": "At Al-Mahdy, we are committed to protecting lives and workplaces. With a wide range of high-quality industrial safety equipment — including gloves, helmets, safety boots, eyewear, and road safety products — we serve businesses across various industries. Our mission is to ensure safety, reliability, and compliance with the highest international standards.",
+            "MainBtn": "Contact Us"
+        },
+        "About": {
+            "Heading": "Al-Mahdy",
+            "Span": "for industrial safety services",
+            "P": "Al Assema Company is one of the leading companies specializing in compressed air technology, integrated engineering and industrial solutions, and production line equipment.",
+            "Ul": {
+                "0": "Maintenance and overhauls for all types of screw compressors, along with comprehensive maintenance contracts.",
+                "1": "Supply of spare parts for all air compressors available in the Egyptian market.",
+                "2": "Authorized distributors for SOTRAS and mann-filter, providing all types of filters and separator components for equipment.",
+                "3": "Distinguished team of engineers and technicians who have received top-level training and have extensive experience working with major brands.",
+                "4": "We offer imported screw air compressors for all applications."
+            }
+        },
+        "fields":{
+            "H2": "Our Fields",
+            "Spans":{
+            "0": "Constructure",
+            "1": "Government",
+            "2": "Education",
+            "3": "Hotels",
+            "4": "Industry",
+            "5": "Infrastructures",
+            "6": "Oil and Gas",
+            "7": "Local and Global",
+            "8": "Commercial",
+            "9": "Personal",
+            "10": "Hospital",
+            "11": "Airport"
+            }
+        },
+        "why": {
+            "h2":"Why Us?",
+            "cardsHeadings":{
+            "0": "Quality & Costumer satisfaction",
+            "1": "Pricing",
+            "2": "Experience & Professionalism",
+            "3": "Time Frame",
+            "4": "Warranty",
+            "5": "Manufacturing Service"
+            },
+            "cardPs": {
+            "0": "We work at a high level of quality to suit the client's requirements.",
+            "1": "We are the best in the market to offer competitive prices by understanding customer budget & their expectations, without compromising the quality standard.",
+            "2": "A Special team of professionals and technicians Highly experienced with full support with the latest tools and equipments.",
+            "3": "We ensure that products and services are delivered within the specified timeframe for customers. We're ready to work 24/7 even in the narrowest timeframe. We have shown this with our previous clients.",
+            "4": "The company is committed to comprehensively guaranteeing all its services and missions with a quick response to customer requests.",
+            "5": "Al-Mahdy Company offers the manufacturing of uniforms and C-ZAR brand protective helmets, customized according to the client's specifications."
+            }
+        },
+        "Manufacturing": {
+            "MainHeading": {
+                "H2": "Manufacturing",
+                "P": "Al-Mahdy Company offers the manufacturing of uniforms and C-ZAR brand protective helmets, customized according to the client's specifications."
+            },
+            "Parts":{
+                "1": {
+                    "Heading": "Safety Uniforms",
+                    "Uls": {
+                        "0": "Manufacturing Safety Uniforms",
+                        "1": "Customized Uniforms",
+                        "2": "High Quality Material",
+                        "3": "Competitive pricing"
+                    },
+                    "OrderBtn": "Order Now!"
+                },
+                "2": {
+                    "Heading": "Safety Helmets",
+                    "Uls": {
+                        "0": "Manufacturing Safety C-ZAR Helmets",
+                        "1": "Customized Helmets",
+                        "2": "High Quality Material",
+                        "3": "Competitive pricing"
+                    },
+                    "OrderBtn": "Order Now!"
+                }
+            }
+        },
+        "Products": {
+            "MainHeading": {
+                "H2": "Products",
+                "P": "We provide reliable industrial safety gear, including gloves, helmets, boots, eyewear, and road safety items. Designed for durability and protection, our products help keep your team safe and compliant."
+            },
+            "Filter":{
+                "All": "All",
+                "Body": "Body",
+                "Head": "Head",
+                "Eyes": "Eyes",
+                "Feet": "Feet",
+                "Hands": "Hands",
+                "Traffic": "Traffic",
+                "Paper": "Paper"
+            },
+            "ProductsCards": {
+                "1": "Imported compressors with various capacities",
+                "2": "Imported compressors with various capacities",
+                "3": "New air dryers, Chicago brand, from the Atlas Copco group",
+                "4": "40-bar booster from Chicago",
+                "5": "Line filters of all sizes, Italian and Chinese",
+                "6": "Oil separators, Noitech",
+                "7": "Air filters, Noitech and Mann filter",
+                "8": "Oil filters, Noitech and Mann filter",
+                "9": "Spinning on oil separators"
+            }
+        },
+        "Work": {
+            "MainHeading": {
+                "H2": "Al-Assema Projects"
+            }
+        },
+        "Testimonials": {
+            "MainHeading": {
+                "H2": "What Our Clients Say"
+            }
+        },
+        "Contact": {
+            "MainHeading": {
+                "H2": "Contact Us"
+            },
+            "Contacts": {
+                "Management": "Management",
+                "Exhibition": "Exhibition",
+                "Sales": "Sales"
+            },
+            "Location": {
+                "Heading": "Where we are",
+                "Address": {
+                    "Line1": "El Ordoneya District",
+                    "Line2": "10th Of Ramadan City",
+                    "Line3": "Ash-Sharqiya",
+                    "Line4": "Egypt"
+                }
+            }
+        },
+        "Brands": {
+            "MainHeading": {
+                "H2": "Our Brands"
+            }
+        },
+        "FireSystem": {
+            "MainHeading": {
+                "H2": "Fire Systems"
+            },
+            "Ps": {
+                "P1": "Al-Mahdy is a pioneer company in providing comprehensive fire system solutions. Our goal is to protect lives and property from the dangers of fires.",
+                "P2": "We have extensive experience in the design, installation, and maintenance of advanced fire systems, ensuring a swift and effective response in the event of any emergency."
+            },
+            "MainBtn": "Contact Us"
+        }
+        
+    },
+    "FloatContact": {
+        "Services": "Services",
+        "Sales": "Sales"
+    }
+  }

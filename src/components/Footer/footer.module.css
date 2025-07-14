@@ -1,0 +1,64 @@
+.footer{
+    background-color: #ffeeff;
+    padding-top: 20px;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    text-wrap: wrap;
+    text-align: center;
+}
+.footer.ar{
+    font-family: "Tajawal", sans-serif;
+}
+.footer .bgImg{
+    position: absolute;
+    filter: grayscale(100%);
+    left: 50%;
+    top: 50%;
+    transform: scale(1) translate(-50%,-50%);
+    z-index: -1;
+    /* height: 100%; */
+    opacity: 0.1;
+}
+.footer .footerContainer{
+    text-align: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.footer .logo img{
+    object-fit: contain;
+    width: 100%;
+}
+.footer > .footerContainer > :nth-child(3){
+    width: fit-content;
+    margin: 10px auto;
+}
+.footer .devFooter{
+    border-top: 1px solid var(--logo-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.footer .devFooter a{
+    color: var(--main-color);
+}
+
+@media (max-width: 767px) {
+    .footer{
+        padding-bottom: 50px;
+    }
+}

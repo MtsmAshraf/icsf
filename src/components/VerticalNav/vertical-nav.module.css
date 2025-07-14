@@ -1,0 +1,79 @@
+.verticalNav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(110%);
+    height: 100vh;
+    background-color: var(--bg-color);
+    padding-top: 20px;
+    border-left: 1px solid var(--logo-color);
+    transition: var(--main-transition);
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: 3;
+    width: 190px;
+}
+.verticalNav.shown:not(.closed){
+    transform: translateX(0%) !important;
+}
+.verticalNav.shown.closed{
+    transform: translateX(110%);
+}
+.verticalNav > *{
+    margin-left: auto;
+    margin-right: auto;
+}
+.verticalNav > :nth-child(2){
+    margin-top: 10px;
+}
+.verticalNav h3{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.verticalNav .links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.verticalNav .links li{
+    width: 100%;
+    border-bottom: 1px solid var(--logo-color);
+}
+.verticalNav .links a{
+    width: 100%;    
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    transition: var(--main-transition);
+}
+.verticalNav .links a.active{
+    background-color: var(--logo-color);
+    color: #fff;
+}
+.verticalNav .links a:hover{
+    background-color: var(--logo-color);
+    color: #fff;
+}
+.verticalNav > :last-child{
+    /* margin-right: 20px;
+    margin-left: 20px; */
+}
+.verticalNav > button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--main-shadow);
+}
