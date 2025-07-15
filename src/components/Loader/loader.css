@@ -69,11 +69,11 @@
     transition-duration: 0.2s;
 }
   .loading.loaded .loader > div:first-child{
-    transform: translateY(-70px);
+    transform: translateY(70px);
     opacity: 0;
   }
   .loading.loaded .loader > div:last-child{
-    transform: translateY(70px);
+    transform: translateY(-70px);
     opacity: 0;
   }
   .loading.loaded .loader::before{

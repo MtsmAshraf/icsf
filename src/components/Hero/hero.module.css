@@ -2,10 +2,6 @@
     /* min-height: 100dvh; */
     padding-top: 90px;
     /* z-index: 8; */
-    background-image: url("../../../public/imgs/hero-bg.jpg");
-    background-image: url("../../../public/imgs/hero-bg.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
     /* overflow: hidden; */
     /* position: relative; */
     /* display: flex; */
@@ -28,6 +24,11 @@
     /* padding-right: 20px; */
     backdrop-filter: blur(20px);
     height: calc((100dvh - 90px));
+    background-image: url("../../../public/imgs/hero-bg.jpg");
+    background-image: url("../../../public/imgs/hero-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
 .hero .part .logo{
     /* opacity: 0; */
@@ -38,12 +39,19 @@
     /* opacity: 1; */
     /* transform: translateY(0px); */
 }
-.hero .part.one{
-    background-color: var(--main-color);
+.hero .part::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.hero .part.one::before{
     background-color: var(--main-semi-color);
 }
-.hero .part.two{
-    background-color: var(--logo-color);
+.hero .part.two::before{
     background-color: var(--logo-semi-color);
 }
 .hero .part.two p{
