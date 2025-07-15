@@ -2,9 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import bgLogo from "../../../public/imgs/favicon.ico"
 import styles from "./footer.module.css"
-import Link from 'next/link'
 import { useTranslations } from 'next-intl'
-import Logo from '../Logo/logo'
 const Footer = ({
     lo
 }: {
