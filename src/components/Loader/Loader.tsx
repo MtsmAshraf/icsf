@@ -1,9 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import "./loader.css"
-import Image from 'next/image'
-import loaderImg from "../../../public/imgs/loader.svg"
-import helmetIcon from "../../app/[locale]/favicon.ico"
 import Logo from '../Logo/logo'
 const Loader = ({
     lo
@@ -28,10 +25,10 @@ const Loader = ({
             </div> */}
             <div className="loader">
                 <div>
-                    <Image src={helmetIcon} alt='helmet Icon'></Image>
-                    <Logo lo={lo}></Logo>
+                    {/* <Image src={helmetIcon} alt='helmet Icon'></Image> */}
+                    <Logo logoNo={1} lo={lo}></Logo>
                 </div>
-                <Image src={loaderImg} alt='Loader'></Image>
+                {/* <Image src={loaderImg} alt='Loader'></Image> */}
             </div>
         </div>
     )

@@ -1,25 +1,18 @@
 
 .logo{
-    /* width: 140px; */
-    height: 70px;
+    width: 100%;
+    /* height: 70px; */
+    /* height: fit-content; */
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .logo.ar{
     font-family: "Tajawal", sans-serif;
     direction: rtl;
 }
-.logo h3{
-    font-size: 34px;
-    /* background-color: var(--main-color); */
-    color: var(--header-bg);
-    /* padding: 0px 20px 5px; */
-    border-radius: 10px 0px;
-    /* box-shadow: var(--sec-shadow); */
-    color: var(--main-color);
-    text-shadow: 2px 2px var(--logo-color);
-}
 .logo img{
+    height: fit-content;
     object-fit: contain;
 }

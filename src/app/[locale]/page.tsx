@@ -10,6 +10,7 @@ import Brands from "@/components/Brands/Brands";
 import Manufacturing from "@/components/Manufacturing/Manufacturing";
 import Loader from "@/components/Loader/Loader";
 import FireSystem from "@/components/FireSystem/FireSystem";
+import About from "@/components/About/About";
 
 export default async function Home({
   params
@@ -24,7 +25,7 @@ export default async function Home({
     <div className={styles.page}>
       <Loader lo={locale}></Loader>
       <Hero lo={locale}></Hero>
-      {/* <About lo={locale}></About> */}
+      <About lo={locale}></About>
       <Why lo={locale}></Why>
       <Manufacturing lo={locale}></Manufacturing>
       <FireSystem lo={locale}></FireSystem>

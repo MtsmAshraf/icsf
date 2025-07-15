@@ -11,8 +11,10 @@
 :root{
   --main-color: #cf292b;
   --sec-color: #282828;
-  /* --logo-color: #282828; */
-  --logo-color: #f09f1d;
+  --main-semi-color: #cf292c99;
+  --sec-semi-color: #2828288d;
+  --logo-color: #fff;
+  --logo-semi-color: #ffffff82;
   --bg-color: #282828;
   --header-bg: #ffffffeb;
   --text-color: #000;
@@ -27,7 +29,7 @@
 }
 ::selection{
   background-color: var(--logo-color);
-  color: #fff;
+  color: var(--main-color);
 }
 html{
   scroll-behavior: smooth;
@@ -81,4 +83,21 @@ svg{
   .container{
     width: 1180px;
   }
+}
+
+.hexagon {
+  width: 100px;
+  height: 110px;
+  background: #64C7CC;
+  clip-path: polygon(
+    50% 0%, 
+    100% 25%, 
+    100% 75%, 
+    50% 100%, 
+    0% 75%, 
+    0% 25%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

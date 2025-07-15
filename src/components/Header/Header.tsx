@@ -25,7 +25,7 @@ const Header = ({
     <header className={lo === "ar" ? styles.header + " " + styles.ar : styles.header}>
         <div className="container">
             <Link className={styles.logo} href={"/"}>
-              <Logo lo={lo}></Logo>
+              <Logo logoNo={1} lo={lo}></Logo>
             </Link>
             <Nav lo={lo}></Nav>
             <div className={styles.smCtrl}>
@@ -38,8 +38,11 @@ const Header = ({
                 <FontAwesomeIcon icon={faArrowRight} />
             </button>
             <VerticalNav shown={showVNav}></VerticalNav>
+            <Link className={styles.logo} href={"/"}>
+              <Logo logoNo={2} lo={lo}></Logo>
+            </Link>
             {/* <SocialUl></SocialUl> */}
-            <LangSwitch lo={lo}></LangSwitch>
+            {/* <LangSwitch lo={lo}></LangSwitch> */}
 
         </div>
     </header>

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
+import Logo from '../Logo/logo'
 const About = ({
     lo
 }: {
@@ -17,11 +18,23 @@ const About = ({
         <div className="container">
             <div className={styles.text}>
                 <div className={styles.aboutHeading}>
-                    <h2>{t("About.Heading")}</h2>
-                    <p>{t("About.Span")}</p>
+                    {/* <h2>{t("About.Heading")}</h2> */}
+                    <h2 className='hexagon'>
+                        ICSF
+                    </h2>
+                    {/* <p>{t("About.Span")}</p> */}
+                    <p>
+                        international  
+                        center for safety and fire - ICSF
+                    </p>
                 </div>
                 <p className={styles.aboutDetails}>
-                    {t("About.P")}
+                    born in 2000 an  
+                    have around 24 years’ experience on fire fighting and  
+                    alarm systems sector
+                    <br />
+                    Which is the bigger sister of Fire Link, born in 2024 in the same field of fire fighting and  
+                    alarm systems sector
                 </p>
                 <ul>
                     <li>
@@ -40,17 +53,17 @@ const About = ({
                         {t("About.Ul.4")}
                     </li>
                 </ul>
-                <MainBtn href='#about' lo={lo}>
+                {/* <MainBtn href='#about' lo={lo}>
                     <Link href={"/about"}>
                         <span>
                             {tBtn("More")}
                         </span>
                         <FontAwesomeIcon icon={faChevronRight} />
                     </Link>
-                </MainBtn>
+                </MainBtn> */}
             </div>
             <div className={styles.logo}>
-                
+                <Logo lo={lo} logoNo={1}></Logo>
             </div>
         </div>
     </section>

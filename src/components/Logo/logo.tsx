@@ -1,19 +1,28 @@
 import React from "react"
 import styles from "./logo.module.css"
 import { useTranslations } from "next-intl"
+import Image from "next/image"
+import logo1 from "../../../public/imgs/logo-1.png"
+import logo2 from "../../../public/imgs/logo-2.png"
+
+
 const Logo = ({
-    lo
+    lo,
+    logoNo
 }: {
-    lo: string
+    lo: string,
+    logoNo: number
 }) => {
 
   const t = useTranslations("Header")
   return (
     <div className={lo === "ar" ? styles.logo + " " + styles.ar : styles.logo}>
-        <h3>
-            {/* {t("Logo")} */}
-            ICSF
-        </h3>
+      {
+        logoNo === 1 ? 
+        <Image src={logo1} alt="ICSF logo"></Image>
+        :
+        <Image src={logo2} alt="Fire Link logo"></Image>
+      }
     </div>
   )
 }

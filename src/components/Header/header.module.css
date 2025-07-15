@@ -4,10 +4,13 @@
     left: 0;
     top: 0;
     background-color: var(--header-bg);
+    background-color: var(--sec-color);
     border-bottom: 1px solid #eee;
     box-shadow: var(--main-shadow), var(--sec-shadow);
     backdrop-filter: blur(10px);
     z-index: 14;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .header.ar{
     direction: rtl;
@@ -20,6 +23,7 @@
 }
 .header .logo{
     text-decoration: none;
+    width: 70px;
 }
 .header .bars{
     color: var(--text-color);
