@@ -25,16 +25,16 @@ export default async function Home({
     <div className={styles.page}>
       <Loader lo={locale}></Loader>
       <Hero lo={locale}></Hero>
-      <About lo={locale}></About>
+      {/* <About lo={locale}></About>
       <Why lo={locale}></Why>
       <Manufacturing lo={locale}></Manufacturing>
       <FireSystem lo={locale}></FireSystem>
       <Fields lo={locale}></Fields>
-      <Brands lo={locale}></Brands>
+      <Brands lo={locale}></Brands> */}
       {/* <Products lo={locale}></Products> */}
       {/* <Work lo={locale}></Work>
       <Testimonials parentEl={"home"} lo={locale}></Testimonials> */}
-      <Contact lo={locale}></Contact>
+      {/* <Contact lo={locale}></Contact> */}
     </div>
   );
 }
