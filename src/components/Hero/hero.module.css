@@ -122,9 +122,9 @@
         flex-direction: column;
     }
     .hero .part{
-        width: 100%;
-        height: calc((100dvh - 90px) / 2);
-        padding: 40px 20px;
+        /* width: 100%; */
+        /* height: calc((100dvh - 90px) / 2); */
+        /* padding: 40px 20px; */
     }
     .hero .part .logo{
         width: 150px;
