@@ -66,7 +66,7 @@
     font-size: 60px;
     color: var(--logo-color);
     margin-bottom: 10px;
-    text-shadow: 2px 2px #000;
+    /* text-shadow: 1px 1px #000; */
     transition: var(--animation-transition);
     transition-duration: 0.4s;
     transform: translateY(20px);
