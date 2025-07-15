@@ -1,16 +1,16 @@
 import styles from "./page.module.css";
 import Hero from "@/components/Hero/Hero";
+import Loader from "@/components/Loader/Loader";
 // import Products from "@/components/Products/Products";
-import Contact from "@/components/Contact/Contact";
 // import Work from "@/components/Work/Work";
 // import Testimonials from "@/components/Testimonials/Testimonials";
-import Fields from "@/components/Fields/fields";
-import Why from "@/components/Why/why";
-import Brands from "@/components/Brands/Brands";
-import Manufacturing from "@/components/Manufacturing/Manufacturing";
-import Loader from "@/components/Loader/Loader";
-import FireSystem from "@/components/FireSystem/FireSystem";
-import About from "@/components/About/About";
+// import Contact from "@/components/Contact/Contact";
+// import Fields from "@/components/Fields/fields";
+// import Why from "@/components/Why/why";
+// import Brands from "@/components/Brands/Brands";
+// import Manufacturing from "@/components/Manufacturing/Manufacturing";
+// import FireSystem from "@/components/FireSystem/FireSystem";
+// import About from "@/components/About/About";
 
 export default async function Home({
   params
