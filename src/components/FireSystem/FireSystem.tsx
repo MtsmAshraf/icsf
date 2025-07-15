@@ -39,7 +39,7 @@ const FireSystem = ({
             }, 1200);
         }
         window.addEventListener("scroll", scrollfireSystemiSection)
-    },[fireSystemScrolled])
+    })
 
     
     const classNames = [

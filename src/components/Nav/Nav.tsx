@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./nav.module.css"
-import { useTranslations } from 'next-intl'
+// import { useTranslations } from 'next-intl'
 // import { Link } from '@/i18n/routing'
 import { usePathname } from 'next/navigation'
 
@@ -9,22 +9,34 @@ const Nav = ({
 }: {
     lo: string
 }) => {
-    const t = useTranslations("Header")
+    // const t = useTranslations("Header")
     const pathname = usePathname()
   return (
     <nav className={lo === "ar" ? styles.nav + " " + styles.ar : styles.nav}>
         <ul className={styles.links}>
             <li>
-                <a className={pathname === `/${lo}` ? styles.active : ""} href={'#hero'}>{t("Nav.Home")}</a>
+                <a className={pathname === `/${lo}` ? styles.active : ""} href={'#hero'}>
+                {/* {t("Nav.Home")} */}
+                Home
+                </a>
             </li>
             <li>
-                <a href={'#manufacturing'}>{t("Nav.Manufacturing")}</a>
+                <a href={'#manufacturing'}>
+                    {/* {t("Nav.Manufacturing")} */}
+                    Link
+                    </a>
             </li>
             <li>
-                <a href={'#products'}>{t("Nav.Products")}</a>
+                <a href={'#products'}>
+                    {/* {t("Nav.Products")} */}
+                    Link
+                    </a>
             </li>
             <li>
-                <a href={'#contact'}>{t("Nav.ContactUs")}</a>
+                <a href={'#contact'}>
+                    {/* {t("Nav.ContactUs")} */}
+                    Link
+                    </a>
             </li>
         </ul>
         {/* <LangSwitch lo={lo}></LangSwitch> */}

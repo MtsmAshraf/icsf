@@ -8,25 +8,28 @@ const Loader = ({
     lo: string
 }) => {
     const [loaded, setLoaded] = useState(false)
+    const [hide, setHide] = useState(false)
     useEffect(() => {
         setTimeout(() => {
             setLoaded(true)
-        }, 500);
+        }, 300);
+        setTimeout(() => {
+            setHide(true)
+        }, 700);
     },[])
+    const classNames = [
+        "loading",
+        loaded ? "loaded" : "",
+        hide ? "hide" : "",
+    ]
     return (
-        <div className={loaded ? "loading" + " " + "loaded" : "loading"}>
-            {/* <div className='push-pop loader'>
-                <div></div>
-                <div></div>
-            </div> */}
-            {/* <div className='push-out loader'>
-                <div></div>
-                <div></div>
-            </div> */}
+        <div className={classNames.join(" ")}>
             <div className="loader">
                 <div>
-                    {/* <Image src={helmetIcon} alt='helmet Icon'></Image> */}
                     <Logo logoNo={1} lo={lo}></Logo>
+                </div>
+                <div>
+                    <Logo logoNo={2} lo={lo}></Logo>
                 </div>
                 {/* <Image src={loaderImg} alt='Loader'></Image> */}
             </div>

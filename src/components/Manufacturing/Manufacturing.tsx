@@ -40,7 +40,7 @@ const Manufacturing = ({
             }, 1200);
         }
         window.addEventListener("scroll", scrollmanufacturingiSection)
-    },[manufacturingScrolled])
+    })
 
     const classNames = [
         lo === "ar" ? styles.ar : null,

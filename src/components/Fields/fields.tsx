@@ -36,7 +36,7 @@ const Fields = ({
             }, 1200);
         }
         window.addEventListener("scroll", scrollfieldsiSection)
-    },[fieldsScrolled])
+    })
 
     
     const classNames = [

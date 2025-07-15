@@ -1,8 +1,8 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import styles from "./hero.module.css"
-import { useTranslations } from 'next-intl';
-import MainBtn from '../MainBtn/MainBtn';
+// import { useTranslations } from 'next-intl';
+// import MainBtn from '../MainBtn/MainBtn';
 import Logo from '../Logo/logo';
 const Hero = ({
     lo
@@ -10,7 +10,7 @@ const Hero = ({
     lo: string,
 }) => {
     // translations
-    const t = useTranslations("HomePage.Hero")
+    // const t = useTranslations("HomePage.Hero")
     // loading animation
     const [loaded, setLoaded] = useState(false)
     useEffect(()=> {

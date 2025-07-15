@@ -34,7 +34,7 @@ const MainHeading = ({
           }, 1200);
       }
       window.addEventListener("scroll", scrollmainHeadingiSection)
-  },[mainHeadingScrolled])
+  })
 
   
   const classNames = [

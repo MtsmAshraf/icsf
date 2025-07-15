@@ -37,7 +37,7 @@ const Why = ({
             }, 1200);
         }
         window.addEventListener("scroll", scrollwhyiSection)
-    },[whyScrolled])
+    })
 
     
     const classNames = [

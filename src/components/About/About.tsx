@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from "./about.module.css"
-import MainBtn from '../MainBtn/MainBtn'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+// import MainBtn from '../MainBtn/MainBtn'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { useTranslations } from 'next-intl'
-import { Link } from '@/i18n/routing'
+// import { Link } from '@/i18n/routing'
 import Logo from '../Logo/logo'
 const About = ({
     lo
@@ -12,7 +12,7 @@ const About = ({
     lo: string
 }) => {
     const t = useTranslations('HomePage');
-    const tBtn = useTranslations('MainBtn');
+    // const tBtn = useTranslations('MainBtn');
   return (
     <section className={lo === "ar"? styles.about + " " + styles.ar: styles.about}>
         <div className="container">

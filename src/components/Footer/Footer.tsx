@@ -18,7 +18,7 @@ const Footer = ({
         </div>
         <div className={styles.footerContainer}>
             <Link href={"/"} className={styles.logo}>
-                <Logo lo={lo}></Logo>
+                <Logo logoNo={1} lo={lo}></Logo>
             </Link>
             <p>
                 &copy; {t("P")}

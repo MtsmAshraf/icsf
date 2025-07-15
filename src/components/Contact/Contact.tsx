@@ -38,7 +38,7 @@ const Contact = ({
           }, 1200);
       }
       window.addEventListener("scroll", scrollcontactiSection)
-  },[contactScrolled])
+  })
 
   
   const classNames = [
