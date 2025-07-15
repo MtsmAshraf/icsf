@@ -53,7 +53,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 1px;
+    width: 2px;
     height: 60px;
     background-color: var(--logo-color);
     transition: var(--animation-transition);
