@@ -26,7 +26,7 @@
   --animation-transition: all 0.6s 0s ease-in-out;
   --main-shadow: 0 .5rem 20px 0px rgba(0, 0, 0, .15);
   --main-heading-shadow: 5px 5px 0px 1px var(--logo-color);
-  --sec-shadow: 3px 3px 0px 1px var(--logo-color);
+  --sec-shadow: 3px 3px 0px 1px var(--sec-color);
   --sec-mini-shadow: 1px 1px 0px 1px var(--logo-color);
 }
 ::selection{
@@ -35,7 +35,12 @@
 }
 html{
   scroll-behavior: smooth;
-  scroll-padding: 70px;
+  scroll-padding: 90px;
+}
+@media (max-width: 600px) {
+  html{
+    scroll-padding: 70px;
+  }
 }
 body{
   background-color: var(--bg-color);
@@ -88,8 +93,8 @@ svg{
 }
 
 .hexagon {
-  width: 100px;
-  height: 110px;
+  /* width: 100px; */
+  /* height: 110px; */
   background: #64C7CC;
   clip-path: polygon(
     50% 0%, 

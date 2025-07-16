@@ -1,0 +1,133 @@
+.where{
+    /* background-color: #ffeeff; */
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.where.ar{
+    font-family: "Tajawal", sans-serif;
+}
+.where .locations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 50px;
+}
+.where .location{
+    z-index: 2;
+    transition: var(--animation-transition);
+    transition-duration: 0.8s;
+    /* transform: translateX(50%); */
+    width: calc((100% - 20px) / 3);
+}
+.where.scrolled .location{
+    /* transform: translateX(0%); */
+}
+.where .socialMedia{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+    box-shadow: var(--main-shadow);
+    margin-top: 20px;
+}
+.where .location h2{
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--main-color);
+    background-color: var(--main-color);
+    color: var(--logo-color);
+    width: fit-content;
+    /* font-size: 66px; */
+    /* border-radius: 10px 0px; */
+    padding-left: 30px;
+    padding-right: 30px;
+    /* padding: 5px 30px; */
+    transition: var(--animation-transition);
+    font-size: 26px;
+}
+.where .location iframe{
+    width: 100%;
+    height: 200px;
+    border: 1px solid var(--logo-color);
+    box-shadow: var(--main-shadow);
+}
+.where .location address{
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--sec-color);
+    color: var(--logo-color);
+    position: relative;
+}
+.where .location address span{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    transform: translateX(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    /* transform: scale(1.4) translateX(7px); */
+}
+.where .location address p{
+    transition: var(--animation-transition);
+    flex: 1;
+    padding-left: 80px;
+    padding: 4px 4px 4px 80px;
+}
+.where.ar .location address{
+    direction: rtl;
+}
+.where .location address svg{
+    font-size: 44px;
+    color: var(--logo-color);
+    /* margin-right: 5px; */
+}
+.where.ar .location address svg{
+    /* margin-right: 0px; */
+    /* margin-left: 5px; */
+}
+@media (max-width: 992px) {
+    .where .locations{
+        gap: 50px;
+    }
+    .where .location{
+        width: calc((100% - 10px) / 2);
+        width: 70%;
+    }
+    .where .location address p{
+        text-align: center;
+        padding-left: 54px;
+    }
+    .where .location address span{
+        /* transform: translateX(0);   */
+        width: 100px;
+        height: 100px;      
+        /* display: none; */
+    }
+}
+@media (max-width: 767px) {
+    .where .location{
+        width: 100%;
+        text-align: center;
+    }
+    .where .location address p{
+        font-size: 12px;
+    }
+    .where .location address span{
+        /* transform: translateX(0);   */
+        width: 80px;
+        height: 80px;      
+    }
+}

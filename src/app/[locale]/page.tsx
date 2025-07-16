@@ -6,6 +6,8 @@ import ServicesCards from "@/components/servicesCards/ServicesCards";
 import Partners from "@/components/Partners/Partners";
 import Fields from "@/components/Fields/fields";
 import Clients from "@/components/Clients/Clients";
+// import Contact from "@/components/Contact/Contact";
+import Where from "@/components/Where/Where";
 // import Products from "@/components/Products/Products";
 // import Work from "@/components/Work/Work";
 // import Testimonials from "@/components/Testimonials/Testimonials";
@@ -43,6 +45,7 @@ export default async function Home({
       {/* <Products lo={locale}></Products> */}
       {/* <Work lo={locale}></Work>
       <Testimonials parentEl={"home"} lo={locale}></Testimonials> */}
+      <Where lo={locale}></Where>
       {/* <Contact lo={locale}></Contact> */}
     </div>
   );

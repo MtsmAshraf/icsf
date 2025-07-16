@@ -52,26 +52,11 @@ const Contact = ({
           <h2>
             {t("Contact.MainHeading.H2")}
           </h2>
+          <p>
+            Here are our location, phone numbers and social media links
+          </p>
         </MainHeading>
         <div className="container">
-          <div className={styles.location}>
-            <h2>
-              {t('Contact.Location.Heading')}
-            </h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215.2984717036612!2d31.744281594828276!3d30.300450805257057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457fd9cae6d2cd3%3A0xf460953f2a0d1aae!2z2KfZhNmF2YfYr9mKINmE2YTYo9mF2YYg2KfZhNi12YbYp9i52Yog2YjZhdiz2KrZhNiy2YXYp9iqINin2YTZhdi12KfZhti5!5e0!3m2!1sen!2seg!4v1748751259960!5m2!1sen!2seg" 
-              allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-            <div className={styles.address}>
-              <address>
-                <FontAwesomeIcon icon={faLocationDot} />  {t('Contact.Location.Address.Line1')},
-                <br />
-                {t('Contact.Location.Address.Line2')},
-                <br />
-                {t('Contact.Location.Address.Line3')},
-                <br />
-                {t('Contact.Location.Address.Line4')}
-              </address>
-            </div>
-          </div>
           <div className={styles.info}>
               <div>
                 {/* <h3>
