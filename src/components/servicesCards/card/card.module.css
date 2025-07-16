@@ -37,7 +37,7 @@
     font-size: 16px;
     padding: 2px 20px;
     border: 1px solid var(--sec-color);
-    box-shadow: var(--main-shadow);
+    box-shadow: var(--main-sh);
 }
 .card p::first-letter{
     text-transform: uppercase;
@@ -60,7 +60,7 @@
     text-align: right;
 }
 @media (max-width: 992px) {
-    .card{
+    /* .card{
         width: 80%;
         margin-right: auto;
         margin-left: auto;
@@ -81,7 +81,7 @@
     .card:nth-child(4) > div:nth-child(2) p,
     .card:nth-child(6) > div:nth-child(2) p{
         text-align: right;
-    }
+    } */
 }
 @media (max-width: 767px) {
     .card{
