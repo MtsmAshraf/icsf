@@ -4,7 +4,7 @@
     left: 0;
     top: 0;
     background-color: var(--header-bg);
-    background-color: var(--sec-color);
+    background-color: var(--logo-color);
     border-bottom: 1px solid #eee;
     box-shadow: var(--main-shadow), var(--sec-shadow);
     backdrop-filter: blur(10px);
@@ -23,7 +23,7 @@
 }
 .header .logo{
     text-decoration: none;
-    width: 70px;
+    width: 50px;
 }
 .header .bars{
     color: var(--text-color);

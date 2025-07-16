@@ -101,6 +101,10 @@ const Hero = ({
         <a href="#about">
             <FontAwesomeIcon icon={faAnglesDown} />
         </a>
+        <div className={styles.btns}>
+            <a href="#contact">Contact Us</a>
+            <a href="#products">Our Products</a>
+        </div>
     </section>
   )
 }

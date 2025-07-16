@@ -15,25 +15,25 @@ const Nav = ({
     <nav className={lo === "ar" ? styles.nav + " " + styles.ar : styles.nav}>
         <ul className={styles.links}>
             <li>
-                <a className={pathname === `/${lo}` ? styles.active : ""} href={'#hero'}>
+                <a className={pathname === `/${lo}` ? styles.active : ""} href={'#'}>
                 {/* {t("Nav.Home")} */}
                 Home
                 </a>
             </li>
             <li>
-                <a href={'#manufacturing'}>
+                <a href={'#'}>
                     {/* {t("Nav.Manufacturing")} */}
                     Link
                     </a>
             </li>
             <li>
-                <a href={'#products'}>
+                <a href={'#'}>
                     {/* {t("Nav.Products")} */}
                     Link
                     </a>
             </li>
             <li>
-                <a href={'#contact'}>
+                <a href={'#'}>
                     {/* {t("Nav.ContactUs")} */}
                     Link
                     </a>
