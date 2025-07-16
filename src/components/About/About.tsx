@@ -6,6 +6,7 @@ import styles from "./about.module.css"
 // import { useTranslations } from 'next-intl'
 // import { Link } from '@/i18n/routing'
 import Logo from '../Logo/logo'
+import MainHeading from '../MainHeading/MainHeading'
 const About = ({
     lo
 }: {
@@ -15,6 +16,23 @@ const About = ({
     // const tBtn = useTranslations('MainBtn');
   return (
     <section id='about' className={lo === "ar"? styles.about + " " + styles.ar: styles.about}>
+        <MainHeading>
+            {/* <span>
+                {t('SubHeading')}
+            </span>
+            <h1>
+                {t('Heading')}
+            </h1> */}
+            <h2>
+                About Us
+            </h2>
+            {/* <p>
+                We provide a turn key solution
+                for all firefighting, fire alarm,
+                security and surveillance
+                systems
+            </p> */}
+        </MainHeading>
         <div className="container">
             <div className={styles.text}>
                 <div className={styles.aboutHeading}>

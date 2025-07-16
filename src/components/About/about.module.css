@@ -3,7 +3,7 @@
     padding-bottom: 100px;
     background-color: var(--bg-dark-color);
 }
-.about > div{
+.about > div:nth-child(2){
     display: flex;
     align-items: center;
     gap: 50px;
@@ -85,6 +85,7 @@
     align-items: center;
     justify-content: center;
     width: 400px;
+    max-width: 80%;
     /* background-color: red; */
 }
 .about .logo img{

@@ -3,8 +3,10 @@
     /* background-color: red; */
     width: fit-content;
     margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
-.mainHeading.centered h2{
+.mainHeading h2{
     margin-right: auto;
     margin-left: auto;
 }

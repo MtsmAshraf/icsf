@@ -40,6 +40,23 @@
 .card p::first-letter{
     text-transform: uppercase;
 }
+.card:nth-child(1),
+.card:nth-child(3),
+.card:nth-child(5){
+    flex-direction: row-reverse;
+}
+
+.card:nth-child(1) > div:nth-child(2) h2,
+.card:nth-child(3) > div:nth-child(2) h2,
+.card:nth-child(5) > div:nth-child(2) h2{
+    margin-left: auto;
+    margin-right: 0;
+}
+.card:nth-child(1) > div:nth-child(2) p,
+.card:nth-child(3) > div:nth-child(2) p,
+.card:nth-child(5) > div:nth-child(2) p{
+    text-align: right;
+}
 @media (max-width: 992px) {
     .card{
         width: 80%;
@@ -67,7 +84,7 @@
 @media (max-width: 767px) {
     .card{
         width: 100%;
-        flex-direction: column;
+        flex-direction: column !important;
     }
     .card:nth-child(2),
     .card:nth-child(4),
@@ -77,8 +94,8 @@
     .card div:has(>img){
     }
     .card > div:nth-child(2) h2{
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
     .card:nth-child(2) > div:nth-child(2) h2,
     .card:nth-child(4) > div:nth-child(2) h2,
@@ -87,11 +104,11 @@
         margin-right: auto;
     }
     .card > div:nth-child(2) p{
-        text-align: center;
+        text-align: center !important;
     }
     .card:nth-child(2) > div:nth-child(2) p,
     .card:nth-child(4) > div:nth-child(2) p,
     .card:nth-child(6) > div:nth-child(2) p{
-        text-align: right;
+        /* text-align: right; */
     }
 }

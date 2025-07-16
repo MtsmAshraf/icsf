@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Card from './card/card'
 import design from "../../../public/imgs/icons8-design-100.png"
 import supply from "../../../public/imgs/icons8-supply-100.png"
+import international from "../../../public/imgs/icons8-international-50.png"
 import installation from "../../../public/imgs/icons8-installation-64.png"
 import testing from "../../../public/imgs/icons8-testing-48.png"
 import maintainance from "../../../public/imgs/icons8-installation-50.png"
@@ -60,6 +61,20 @@ const ServicesCards = ({
                         </h2>
                         <p>
                             SUPPLY ALL SYSTEMS COMPONENTS
+                        </p>
+                    </div>
+                </Card>
+                <Card>
+                    <div className={` hexagon`}>
+                        <Image src={international} alt='international'></Image>
+                    </div>
+                    <div className={styles.cardText}>    
+                        <h2 className=''>
+                            International
+                        </h2>
+                        <p>
+                            AGENTS FOR SOME OF
+                            INTERNATIONAL BRANDS
                         </p>
                     </div>
                 </Card>
