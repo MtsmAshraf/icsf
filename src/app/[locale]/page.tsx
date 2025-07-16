@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import Hero from "@/components/Hero/Hero";
 import Loader from "@/components/Loader/Loader";
 import ServicesCards from "@/components/servicesCards/ServicesCards";
-import Partners from "@/components/Brands/Partners";
+import Partners from "@/components/Partners/Partners";
 // import Products from "@/components/Products/Products";
 // import Work from "@/components/Work/Work";
 // import Testimonials from "@/components/Testimonials/Testimonials";
