@@ -59,7 +59,7 @@ const Where = ({
             <div className={styles.location}>
               <h2>
                 {/* {t('Contact.Location.Heading')} */}
-                Icsf shop
+                ICSF shop
               </h2>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.781217974793!2d31.7427494!3d30.300289400000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457fd9b476b366b%3A0x66b4bb20a60b2145!2zSW50ZXJuYXRpb25hbCBjZW50ZXIgZm9yIGZpcmUgYW5kIHNhZmV0eSDYp9mE2YXYsdmD2LIg2KfZhNiv2YjZhNmKINmE2YTYp9i32YHYp9ihINmI2KfZhNin2YXZhiDYp9mE2LXZhtin2LnZig!5e0!3m2!1sen!2seg!4v1752687120428!5m2!1sen!2seg"
                 allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
