@@ -48,7 +48,7 @@ const Contact = ({
   ]
   return (
     <section id='contact' ref={contact} className={classNames.join(" ")}>
-        <MainHeading centered>
+        <MainHeading>
           <h2>
             {t("Contact.MainHeading.H2")}
           </h2>

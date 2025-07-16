@@ -48,7 +48,7 @@ const Why = ({
 
   return (
     <div ref={why} className={classNames.join(" ")}>
-        <MainHeading centered={true}>
+        <MainHeading>
             <h2>
                 {t("h2")}
             </h2>

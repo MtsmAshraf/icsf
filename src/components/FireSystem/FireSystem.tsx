@@ -50,7 +50,7 @@ const FireSystem = ({
 
   return (
     <div id='fire-system' ref={fireSystem} className={classNames.join(" ")}>
-        <MainHeading centered>
+        <MainHeading>
             <h2>
                 {
                     t("MainHeading.H2")
