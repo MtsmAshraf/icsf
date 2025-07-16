@@ -34,7 +34,7 @@ const Partners = ({
                 autoplay={{
                     delay: 1000
                 }}
-                slidesPerView= {5}
+                // slidesPerView= {5}
                 spaceBetween={20}
                 pagination={{
                     clickable: true,
