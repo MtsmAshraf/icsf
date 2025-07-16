@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from "./contact.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { useTranslations } from 'next-intl'
 import MainHeading from '../MainHeading/MainHeading'
