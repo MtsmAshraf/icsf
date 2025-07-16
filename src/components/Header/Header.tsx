@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faBars } from '@fortawesome/free-solid-svg-icons'
 import VerticalNav from '../VerticalNav/VerticalNav'
 import { Link } from '@/i18n/routing'
-import LangSwitch from '../Nav/LangSwitch/LangSwitch'
+// import LangSwitch from '../Nav/LangSwitch/LangSwitch'
 // import { usePathname } from 'next/navigation'
 import Logo from '../Logo/logo'
 
