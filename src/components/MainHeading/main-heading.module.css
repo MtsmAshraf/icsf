@@ -8,12 +8,13 @@
 }
 
 .mainHeading h2{
-    margin-right: auto;
-    margin-left: auto;
 }
 .mainHeading h2{
+    margin-right: auto;
+    margin-left: auto;
     color: var(--main-color);
     background-color: var(--main-color);
+    background-image: var(--main-gradient);
     color: var(--logo-color);
     width: fit-content;
     /* font-size: 66px; */
