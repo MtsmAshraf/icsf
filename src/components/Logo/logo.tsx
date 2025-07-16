@@ -9,7 +9,7 @@ const Logo = ({
     lo,
     logoNo
 }: {
-    lo: string,
+    lo?: string,
     logoNo: number
 }) => {
 

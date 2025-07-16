@@ -29,7 +29,7 @@ const Header = ({
             </Link>
             <Nav lo={lo}></Nav>
             <div className={styles.smCtrl}>
-              <LangSwitch lo={lo}></LangSwitch>
+              {/* <LangSwitch lo={lo}></LangSwitch> */}
               <button className={styles.bars} onClick={() => {setShowVNav(true)}}>
                   <FontAwesomeIcon icon={faBars} />
               </button>

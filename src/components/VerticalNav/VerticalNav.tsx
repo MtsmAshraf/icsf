@@ -5,6 +5,7 @@ import styles from "./vertical-nav.module.css"
 // import { Link } from '@/i18n/routing'
 // import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
+import Logo from '../Logo/logo'
 const VerticalNav = ({
     shown,
     // lo
@@ -24,29 +25,37 @@ const VerticalNav = ({
     <div className={shown ? styles.verticalNav + " " + styles.shown : styles.verticalNav}>
         {/* <h3>{t("VerticalNav.Language")}</h3>
         <LangSwitch lo={lo}></LangSwitch> */}
-        <h3>{t("VerticalNav.Sections")}</h3>
+        {/* <h3>{t("VerticalNav.Sections")}</h3> */}
+        <div className={styles.logo}>
+            <Logo logoNo={1}></Logo>
+        </div>
         <ul className={styles.links}>
             {/* <li onClick={() => {closeVerticalNav()}}>
                 <a href={'/'}>{t("VerticalNav.Home")}</a>
             </li> */}
-            <li onClick={() => {closeVerticalNav()}}>
+            {/* <li onClick={() => {closeVerticalNav()}}>
                 <a href={'#manufacturing'}>{t("VerticalNav.Manufacturing")}</a>
             </li>
             <li onClick={() => {closeVerticalNav()}}>
                 <a href={'#fire-system'}>{t("VerticalNav.FireSystem")}</a>
+            </li> */}
+            <li onClick={() => {closeVerticalNav()}}>
+                <a href={'#fields'}>
+                    {t("VerticalNav.Fields")}
+                </a>
             </li>
             <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#fields'}>{t("VerticalNav.Fields")}</a>
+                <a href={'#partners'}>
+                    {/* {t("VerticalNav.Brands")} */}
+                    Partners
+                </a>
             </li>
-            <li onClick={() => {closeVerticalNav()}}>
-                <a href={'#brands'}>{t("VerticalNav.Brands")}</a>
-            </li>
-            <li onClick={() => {closeVerticalNav()}}>
+            {/* <li onClick={() => {closeVerticalNav()}}>
                 <a href={'#products'}>{t("VerticalNav.Products")}</a>
-            </li>
-            <li onClick={() => {closeVerticalNav()}}>
+            </li> */}
+            {/* <li onClick={() => {closeVerticalNav()}}>
                 <a href={'#contact'}>{t("VerticalNav.ContactUs")}</a>
-            </li>
+            </li> */}
         </ul>
         {/* <h3>{t("VerticalNav.Contact")}</h3>
         <SocialUl></SocialUl> */}

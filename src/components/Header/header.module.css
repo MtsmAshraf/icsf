@@ -41,7 +41,7 @@
     color: #fff;
     width: 26px;
     cursor: pointer;
-    background-color: var(--logo-color);
+    background-color: var(--sec-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,13 +49,13 @@
     top: 30px;
     right: -150px;
     padding: 4px 10px;
-    border-radius: 6px 0px 0px 6px;
+    /* border-radius: 6px 0px 0px 6px; */
     border: 1px solid var(--logo-color);
     transition: var(--main-transition);
     transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .header .close.shown{
-    right: 190px;
+    right: 60vw;
 }
 @media (max-width: 992px) {
     .header > div{
@@ -68,6 +68,6 @@
         gap: 20px;
     }
     .header > div > :last-child{
-        display: none;
+        /* display: none; */
     }
 }
