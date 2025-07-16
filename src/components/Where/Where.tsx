@@ -1,8 +1,6 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react'
 import styles from "./where.module.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 // import { useTranslations } from 'next-intl'
 import MainHeading from '../MainHeading/MainHeading'
 const Where = ({
@@ -67,13 +65,8 @@ const Where = ({
                 allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               <div className={styles.address}>
                 <address>
-                  <span className='hexagon'>
-                      <FontAwesomeIcon icon={faLocationDot} />  
-                  </span>
-                  <p>
                     Negoom El Safa Mall - Shop no.8, Ordonia, <br />
                     10th of Ramadan City, Egypt 
-                  </p>
 
                   {/* {t('Contact.Location.Address.Line1')},
                   <br />
@@ -94,13 +87,8 @@ const Where = ({
                 allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               <div className={styles.address}>
                 <address>
-                                  <span className='hexagon'>
-                                      <FontAwesomeIcon icon={faLocationDot} />  
-                                  </span>
-                                  <p>
                     Jeddah Mall, Third Floor – Office No. 3, Ordonia, <br />
                     10th of Ramadan City, Egypt 
-                                  </p>
 
                   {/* {t('Contact.Location.Address.Line1')},
                   <br />
@@ -121,9 +109,6 @@ const Where = ({
                 allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               <div className={styles.address}>
                 <address>
-                                  <span className='hexagon'>
-                                      <FontAwesomeIcon icon={faLocationDot} />  
-                                  </span>
                                   <p>
                     Jeddah Mall - Ground Floor - Shop No. 16, Ordonia, <br />
                     10th of Ramadan City, Egypt 
