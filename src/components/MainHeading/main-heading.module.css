@@ -6,6 +6,7 @@
     margin-right: auto;
     margin-left: auto;
 }
+
 .mainHeading h2{
     margin-right: auto;
     margin-left: auto;
@@ -34,6 +35,10 @@
     background-color: var(--sec-color);
     color: var(--logo-color);
     padding: 5px 30px;
+}
+.mainHeading.inverted p{
+    background-color: var(--logo-color);
+    color: var(--sec-color);
 }
 .mainHeading.scrolled p{
     opacity: 1;

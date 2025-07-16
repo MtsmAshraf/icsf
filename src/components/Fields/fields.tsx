@@ -2,8 +2,20 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from "./fields.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBuildingColumns, faCity, faEarthAfrica, faGraduationCap, faHospital, faHotel, faHouseUser, faIndustry, faOilWell, faPlaneDeparture, faShop, faTrowelBricks } from '@fortawesome/free-solid-svg-icons'
+import { 
+    faBellConcierge, 
+    faBuildingColumns, 
+    faGopuram, 
+    faHospital, 
+    faHotel, 
+    faIndustry, 
+    faPlaneDeparture, 
+    faRoadBridge, 
+    faShop, 
+    faTreeCity, 
+} from '@fortawesome/free-solid-svg-icons'
 import { useTranslations } from 'next-intl'
+import MainHeading from '../MainHeading/MainHeading'
 const Fields = ({
     lo
 } : {
@@ -47,102 +59,103 @@ const Fields = ({
 
   return (
     <div id='fields' ref={fields} className={classNames.join(" ")}>
-        <h2>{t("H2")}</h2>
+        {/* <h2>{t("H2")}</h2> */}
+        <MainHeading inverted>
+            <h2>
+                Our Fields
+            </h2>
+            <p>
+                Here are some of our fields of work
+            </p>
+        </MainHeading>
         <div className="container">
             <div className={styles.field} style={{ transitionDelay: "0s" }}>
-                <div className={styles.icon}>
-                    <FontAwesomeIcon icon={faTrowelBricks} />
+                <div className={styles.icon + ` hexagon`}>
+                    <FontAwesomeIcon icon={faIndustry} />
                 </div>
                 <span>  
-                    {t("Spans.0")}
+                    Industrial
                 </span>
             </div>
             <div className={styles.field} style={{ transitionDelay: "0.2s" }}>
-                <div className={styles.icon}>
-                    <FontAwesomeIcon icon={faBuildingColumns} />
-                </div>
-                <span>
-                    {t("Spans.1")}
-                </span>
-            </div>
-            <div className={styles.field} style={{ transitionDelay: "0.4s" }}>
-                <div className={styles.icon}>
-                    <FontAwesomeIcon icon={faGraduationCap} />                    
-                </div>
-                <span>
-                    {t("Spans.2")}
-                </span>
-            </div>
-            <div className={styles.field} style={{ transitionDelay: "0.6s" }}>
-                <div className={styles.icon}>
-                    <FontAwesomeIcon icon={faHotel} />
-                </div>
-                <span>
-                    {t("Spans.3")}
-                </span>
-            </div>
-            <div className={styles.field} style={{ transitionDelay: "0.8s" }}>
-                <div className={styles.icon}>
-                    <FontAwesomeIcon icon={faIndustry} />
-                </div>
-                <span>
-                    {t("Spans.4")}
-                </span>
-            </div>
-            <div className={styles.field} style={{ transitionDelay: "1s" }}>
-                <div className={styles.icon}>
-                    <FontAwesomeIcon icon={faCity} />
-                </div>
-                <span>
-                    {t("Spans.5")}
-                </span>
-            </div>
-            <div className={styles.field} style={{ transitionDelay: "1.2s" }}>
-                <div className={styles.icon}>
-                    <FontAwesomeIcon icon={faOilWell} />
-                </div>
-                <span>
-                    {t("Spans.6")}
-                </span>
-            </div>
-            <div className={styles.field} style={{ transitionDelay: "1.4s" }}>
-                <div className={styles.icon}>
-                    <FontAwesomeIcon icon={faEarthAfrica} />
-                </div>
-                <span>
-                    {t("Spans.7")}
-                </span>
-            </div>
-            <div className={styles.field} style={{ transitionDelay: "1.6s" }}>
-                <div className={styles.icon}>
+                <div className={styles.icon + ` hexagon`}>
                     <FontAwesomeIcon icon={faShop} />
                 </div>
                 <span>
-                    {t("Spans.8")}
+                    {/* {t("Spans.1")} */}
+                    Commercial Residential
                 </span>
             </div>
-            <div className={styles.field} style={{ transitionDelay: "1.8s" }}>
-                <div className={styles.icon}>
-                    <FontAwesomeIcon icon={faHouseUser} />
+            <div className={styles.field} style={{ transitionDelay: "0.4s" }}>
+                <div className={styles.icon + ` hexagon`}>
+                    <FontAwesomeIcon icon={faTreeCity} />                    
                 </div>
                 <span>
-                    {t("Spans.9")}
+                    {/* {t("Spans.2")} */}
+                    PublicAttractions
                 </span>
             </div>
-            <div className={styles.field} style={{ transitionDelay: "2s" }}>
-                <div className={styles.icon}>
+            <div className={styles.field} style={{ transitionDelay: "0.6s" }}>
+                <div className={styles.icon + ` hexagon`}>
+                    <FontAwesomeIcon icon={faHotel} />
+                </div>
+                <span>
+                    {/* {t("Spans.3")} */}
+                    Residences
+                </span>
+            </div>
+            <div className={styles.field} style={{ transitionDelay: "0.8s" }}>
+                <div className={styles.icon + ` hexagon`}>
                     <FontAwesomeIcon icon={faHospital} />
                 </div>
                 <span>
-                    {t("Spans.10")}
+                    {/* {t("Spans.10")} */}
+                    Hospitals
                 </span>
             </div>
-            <div className={styles.field} style={{ transitionDelay: "2.2s" }}>
-                <div className={styles.icon}>
+            <div className={styles.field} style={{ transitionDelay: "1s" }}>
+                <div className={styles.icon + ` hexagon`}>
                     <FontAwesomeIcon icon={faPlaneDeparture} />
                 </div>
                 <span>
-                    {t("Spans.11")}
+                    {/* {t("Spans.5")} */}
+                    Airports
+                </span>
+            </div>
+            <div className={styles.field} style={{ transitionDelay: "1.2s" }}>
+                <div className={styles.icon + ` hexagon`}>
+                    <FontAwesomeIcon icon={faBuildingColumns} />
+                </div>
+                <span>
+                    {/* {t("Spans.6")} */}
+                    Museums
+                </span>
+            </div>
+            <div className={styles.field} style={{ transitionDelay: "1.4s" }}>
+                <div className={styles.icon + ` hexagon`}>
+                    <FontAwesomeIcon icon={faRoadBridge} />
+                </div>
+                <span>
+                    {/* {t("Spans.7")} */}
+                    Facilities
+                </span>
+            </div>
+            <div className={styles.field} style={{ transitionDelay: "1.6s" }}>
+                <div className={styles.icon + ` hexagon`}>
+                    <FontAwesomeIcon icon={faBellConcierge} />
+                </div>
+                <span>
+                    {/* {t("Spans.8")} */}
+                    Hotels & Resorts
+                </span>
+            </div>
+            <div className={styles.field} style={{ transitionDelay: "1.8s" }}>
+                <div className={styles.icon + ` hexagon`}>
+                    <FontAwesomeIcon icon={faGopuram} />
+                </div>
+                <span>
+                    {/* {t("Spans.9")} */}
+                    Malls
                 </span>
             </div>
             </div>

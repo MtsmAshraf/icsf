@@ -3,10 +3,10 @@ import React, { useEffect, useRef, useState } from 'react'
 import styles from "./main-heading.module.css"
 const MainHeading = ({
     children,
-    centered
+    inverted
 } : {
     children: React.ReactNode,
-    centered?: boolean,
+    inverted?: boolean,
 }) => {
   // scroll animations
   const mainHeading: any = useRef(null)
@@ -39,7 +39,7 @@ const MainHeading = ({
   
   const classNames = [
       // lo === "ar" ? styles.ar : null,
-      centered ? styles.centered : null,
+      inverted ? styles.inverted : null,
       mainHeadingScrolled ? styles.scrolled : null,
       styles.mainHeading
   ]
