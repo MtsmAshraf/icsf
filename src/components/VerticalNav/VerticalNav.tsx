@@ -50,6 +50,12 @@ const VerticalNav = ({
                     Partners
                 </a>
             </li>
+            <li onClick={() => {closeVerticalNav()}}>
+                <a href={'#where'}>
+                    {/* {t("VerticalNav.Brands")} */}
+                    Our Location
+                </a>
+            </li>
             {/* <li onClick={() => {closeVerticalNav()}}>
                 <a href={'#products'}>{t("VerticalNav.Products")}</a>
             </li> */}
