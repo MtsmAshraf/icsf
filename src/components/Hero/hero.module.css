@@ -1,6 +1,6 @@
 .hero{
     padding-top: 90px;
-    /* position: relative; */
+    position: relative;
 }
 .hero > a{
     position: absolute;
@@ -10,6 +10,9 @@
     z-index: 3;
     color: #fff;
     font-size: 40px;
+    display: block;
+    width: 50px;
+    height: 50px;
 }
 .hero .swiper{
     position: relative;
@@ -102,19 +105,6 @@
     transform: translateX(0px);
     opacity: 1;
     filter: blur(0px);
-}
-.hero a{
-    width: fit-content;
-    
-    transition: var(--animation-transition);
-    transition-duration: 0.4s;
-    /* transition-delay: 0.2s; */
-    transform: translateY(20px);
-    opacity: 0;
-}
-.hero.loaded a{
-    transform: translateY(0px);
-    opacity: 1;
 }
 @media (max-width: 1200px) {
     .hero{
