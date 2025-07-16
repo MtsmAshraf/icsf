@@ -79,9 +79,9 @@ const Hero = ({
                         <div className={styles.logo}>
                             <Logo lo={lo} logoNo={2}></Logo>
                         </div>
-                        <h1>
+                        {/* <h1>
                             Fire Link
-                        </h1>
+                        </h1> */}
                         <p>
                                 born in 2024 as sister company for international  
                                 center for safety and fire.
