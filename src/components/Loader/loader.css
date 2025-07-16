@@ -69,6 +69,11 @@
     transition: var(--animation-transition);
     transition-duration: 0.2s;
 }
+.loading .loader > div:last-child{
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+}
   .loading.loaded .loader > div:first-child{
     transform: translateY(70px);
     opacity: 0;

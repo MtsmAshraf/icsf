@@ -5,6 +5,7 @@ import Loader from "@/components/Loader/Loader";
 import ServicesCards from "@/components/servicesCards/ServicesCards";
 import Partners from "@/components/Partners/Partners";
 import Fields from "@/components/Fields/fields";
+import Clients from "@/components/Clients/Clients";
 // import Products from "@/components/Products/Products";
 // import Work from "@/components/Work/Work";
 // import Testimonials from "@/components/Testimonials/Testimonials";
@@ -33,6 +34,7 @@ export default async function Home({
       <Partners lo={locale}></Partners>
       <ServicesCards lo={locale}></ServicesCards>
       <Fields lo={locale}></Fields>
+      <Clients lo={locale}></Clients>
       {/* 
       <Why lo={locale}></Why>
       <Manufacturing lo={locale}></Manufacturing>

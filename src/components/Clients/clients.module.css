@@ -1,0 +1,158 @@
+.clients{
+    /* min-height: 100vh; */
+    z-index: 8;
+    /* overflow: hidden; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #fff;
+}
+.clients.ar{
+    font-family: "Tajawal", sans-serif;
+}
+.clients > :first-child{ /* MainHeading */
+    margin-right: auto;
+    margin-left: auto;
+}
+.clients h1{
+    font-size: 80px;
+    color: var(--logo-color);
+}
+.clients p{
+    color: #fff;
+    /* width: 50%; */
+}
+.clients .img{
+    /* padding-bottom: 60px; */
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clients .img::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -67px;
+    /* height: calc(100dvh - 67px); */
+    width: 100%;
+    background-color: var(--main-color);
+    opacity: 0.2;
+}
+.clients .img img{
+    height: 80px;
+    width: 100%;
+    object-fit: contain;
+}
+.clients .swiper{
+    position: relative;
+    padding-top: 80px;
+    /* padding-bottom: 80px; */
+    /* height: 100dvh; */
+}
+.clients .swiper p{
+    /* background-color: var(--logo-color); */
+    /* background-image: var(--main-gradient); */
+    position: absolute;
+    /* width: calc(100% + 20px); */
+    left: -10px;
+    bottom: 0;
+    color: #fff;
+    font-family: "Tajawal", sans-serif;
+    direction: rtl;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    z-index: 3;
+}
+.clients.en .swiper p{
+    font-family: "Poppins", sans-serif;
+    direction: ltr;
+}
+.clients .swiper button{
+    /* position: absolute; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #00000051;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clients .swiper button:first-of-type{
+    left: 0;
+}
+.clients .swiper button:last-of-type{
+    right: 0;
+}
+.clients .clientsPagination{
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.clients .clientsPagination span{
+    background-color: var(--main-color);
+}
+@media (max-width: 992px) {
+    .clients .swiper p{
+        font-size: 20px;
+    }
+    .clients .clientsPagination{
+        width: 100%;
+    }
+    .clients .clientsPagination > *{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 767px) {
+    .clients .img{
+        overflow: hidden;
+    }
+    .clients .img img{
+    }
+    .clients .swiper .img img{
+        object-fit: contain;
+        /* transform: scaleX(1.5) scaleY(1.5); */
+        /* height: auto; */
+    }
+    .clients .swiper .first .img{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .clients .swiper .first .img img{
+        transform: scaleX(1) scaleY(1);
+        /* padding-right: 40px;
+        padding-left: 40px; */
+    }
+    .clients .img::before{
+        /* transform: scaleX(25) scaleY(2 5); */
+        z-index: 12;
+    }
+    .clients .swiper button{
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .clients .swiper button:first-of-type{
+        left: 10px;
+    }
+    .clients .swiper button:last-of-type{
+        right: 10px;
+    }
+}

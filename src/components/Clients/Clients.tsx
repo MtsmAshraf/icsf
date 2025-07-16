@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import styles from "./partners.module.css"
+import styles from "./clients.module.css"
 import Image from 'next/image';
 // import logo from "../../../public/imgs/logojpg.webp"
 // import sliderProducts from './sliderProducts';
@@ -14,19 +14,19 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination'; 
 
 import MainHeading from '../MainHeading/MainHeading';
-import sliderLogos, { SliderLogo } from './sliderProducts';
-const Partners = ({
+import sliderLogos, { SliderLogo } from './sliderClients';
+const Clients = ({
     lo
 }: {
     lo: string,
 }) => {
     // const t = useTranslations("HomePage.Brands")
   return (
-    <section id='partners' className={lo === "ar" ? styles.partners + " " + styles.ar : styles.partners}>
+    <section id='clients' className={lo === "ar" ? styles.clients + " " + styles.ar : styles.clients}>
         <MainHeading>
             {/* <h2>{t("MainHeading.H2")}</h2> */}
-            <h2>Partners</h2>
-            <p>Here is some of our success partners</p>
+            <h2>Clients</h2>
+            <p>Here are some of clients</p>
         </MainHeading>
         <div className={styles.swiper}>
             <Swiper
@@ -38,7 +38,7 @@ const Partners = ({
                 spaceBetween={20}
                 pagination={{
                     clickable: true,
-                    el: `.partnersPagination`
+                    el: `.clientsPagination`
                 }}
                 modules={[Navigation, Pagination, Autoplay]}
                 navigation={{
@@ -75,8 +75,8 @@ const Partners = ({
                     })
                 }
             </Swiper>
-            <div className={styles.partnersPagination}>
-                <div className={`partnersPagination`}></div>
+            <div className={styles.clientsPagination}>
+                <div className={`clientsPagination`}></div>
             </div>
             {/* <button className='featured-swiper-button-prev'>
                 <FontAwesomeIcon icon={faChevronLeft} />
@@ -89,4 +89,4 @@ const Partners = ({
   )
 }
 
-export default Partners
+export default Clients
