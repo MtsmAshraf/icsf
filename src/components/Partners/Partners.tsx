@@ -4,7 +4,7 @@ import styles from "./partners.module.css"
 import Image from 'next/image';
 // import logo from "../../../public/imgs/logojpg.webp"
 // import sliderProducts from './sliderProducts';
-import { useTranslations } from 'next-intl';
+// import { useTranslations } from 'next-intl';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
@@ -20,7 +20,7 @@ const Partners = ({
 }: {
     lo: string,
 }) => {
-    const t = useTranslations("HomePage.Brands")
+    // const t = useTranslations("HomePage.Brands")
   return (
     <section id='partners' className={lo === "ar" ? styles.partners + " " + styles.ar : styles.partners}>
         <MainHeading>

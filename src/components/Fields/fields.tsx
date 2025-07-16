@@ -14,14 +14,14 @@ import {
     faShop, 
     faTreeCity, 
 } from '@fortawesome/free-solid-svg-icons'
-import { useTranslations } from 'next-intl'
+// import { useTranslations } from 'next-intl'
 import MainHeading from '../MainHeading/MainHeading'
 const Fields = ({
     lo
 } : {
     lo: string
 }) => {
-    const t = useTranslations("HomePage.fields")
+    // const t = useTranslations("HomePage.fields")
     // scroll animations
     const fields: any = useRef(null)
     const [fieldsScrolled, setFieldsScrolled] = useState(false)
