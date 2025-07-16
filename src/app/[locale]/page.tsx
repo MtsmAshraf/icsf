@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Hero from "@/components/Hero/Hero";
 import Loader from "@/components/Loader/Loader";
 import ServicesCards from "@/components/servicesCards/ServicesCards";
+import Partners from "@/components/Brands/Partners";
 // import Products from "@/components/Products/Products";
 // import Work from "@/components/Work/Work";
 // import Testimonials from "@/components/Testimonials/Testimonials";
@@ -28,13 +29,13 @@ export default async function Home({
       <Loader lo={locale}></Loader>
       <Hero lo={locale}></Hero>
       <About lo={locale}></About>
+      <Partners lo={locale}></Partners>
       <ServicesCards lo={locale}></ServicesCards>
       {/* 
       <Why lo={locale}></Why>
       <Manufacturing lo={locale}></Manufacturing>
       <FireSystem lo={locale}></FireSystem>
-      <Fields lo={locale}></Fields>
-      <Brands lo={locale}></Brands> */}
+      <Fields lo={locale}></Fields> */}
       {/* <Products lo={locale}></Products> */}
       {/* <Work lo={locale}></Work>
       <Testimonials parentEl={"home"} lo={locale}></Testimonials> */}

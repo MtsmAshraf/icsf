@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import styles from "./brands.module.css"
+import styles from "./partners.module.css"
 import Image from 'next/image';
 // import logo from "../../../public/imgs/logojpg.webp"
 // import sliderProducts from './sliderProducts';
@@ -15,16 +15,18 @@ import 'swiper/css/pagination';
 
 import MainHeading from '../MainHeading/MainHeading';
 import sliderLogos, { SliderLogo } from './sliderProducts';
-const Brands = ({
+const Partners = ({
     lo
 }: {
     lo: string,
 }) => {
     const t = useTranslations("HomePage.Brands")
   return (
-    <section id='brands' className={lo === "ar" ? styles.brands + " " + styles.ar : styles.brands}>
+    <section id='partners' className={lo === "ar" ? styles.partners + " " + styles.ar : styles.partners}>
         <MainHeading>
-            <h2>{t("MainHeading.H2")}</h2>
+            {/* <h2>{t("MainHeading.H2")}</h2> */}
+            <h2>Partners</h2>
+            <p>Here is some of our success partners</p>
         </MainHeading>
         <div className={styles.swiper}>
             <Swiper
@@ -36,7 +38,7 @@ const Brands = ({
                 spaceBetween={20}
                 pagination={{
                     clickable: true,
-                    el: `.brandsPagination`
+                    el: `.partnersPagination`
                 }}
                 modules={[Navigation, Pagination, Autoplay]}
                 navigation={{
@@ -47,7 +49,7 @@ const Brands = ({
                 autoHeight={true}
                 breakpoints={{
                     400: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
                     spaceBetween: 10
                     },
                     640: {
@@ -65,7 +67,7 @@ const Brands = ({
                     sliderLogos.map((logo: SliderLogo) => {
                         return(
                         <SwiperSlide key={logo.id}>
-                            <div className={styles.img}>
+                            <div className={styles.img + ` hexagpn`}>
                                 <Image src={logo.src} alt={`Brand number ${logo.src} logo`}></Image>
                             </div>
                         </SwiperSlide>
@@ -73,8 +75,8 @@ const Brands = ({
                     })
                 }
             </Swiper>
-            <div className={styles.brandsPagination}>
-                <div className={`brandsPagination`}></div>
+            <div className={styles.partnersPagination}>
+                <div className={`partnersPagination`}></div>
             </div>
             {/* <button className='featured-swiper-button-prev'>
                 <FontAwesomeIcon icon={faChevronLeft} />
@@ -87,4 +89,4 @@ const Brands = ({
   )
 }
 
-export default Brands
+export default Partners

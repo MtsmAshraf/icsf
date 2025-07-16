@@ -18,7 +18,6 @@ const ServicesCards = ({
 }) => {
   return (
     <section className={lo === "en" ? styles.servicesCards + " " + styles.en : styles.servicesCards}>
-        <div className={styles.overlay}></div>
         <div className="container">
             <MainHeading>
                 {/* <span>
