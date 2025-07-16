@@ -92,7 +92,7 @@ const Fields = ({
                 </div>
                 <span>
                     {/* {t("Spans.2")} */}
-                    PublicAttractions
+                    Public Attractions
                 </span>
             </div>
             <div className={styles.field} style={{ transitionDelay: "0.6s" }}>
