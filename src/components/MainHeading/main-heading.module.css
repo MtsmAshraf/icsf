@@ -1,52 +1,48 @@
 
-.mainHeading.centered{
-    margin-right: auto;
-    margin-left: auto;
+.mainHeading{
     /* background-color: red; */
-    text-align: center;
-    display: block;
+    width: fit-content;
+    margin-bottom: 30px;
 }
 .mainHeading.centered h2{
     margin-right: auto;
     margin-left: auto;
 }
 .mainHeading h2{
-    color: var(--logo-color);
-    color: white;
+    color: var(--main-color);
     background-color: var(--main-color);
-    font-size: 66px;
-    margin-bottom: 12px;
+    color: var(--logo-color);
     width: fit-content;
-    border-radius: 10px 0px;
+    /* font-size: 66px; */
+    /* border-radius: 10px 0px; */
     padding-left: 30px;
     padding-right: 30px;
     /* padding: 5px 30px; */
-    text-align: center;
     transition: var(--animation-transition);
-}
-.mainHeading.scrolled h2{
-    box-shadow: var(--main-heading-shadow), var(--main-shadow);
     font-size: 36px;
 }
+.mainHeading.scrolled h2{
+    /* box-shadow: var(--main-heading-shadow), var(--main-shadow); */
+}
 .mainHeading p{
-    margin-bottom: 16px;
-    margin-top: 20px;
-    width: 70%;
-    font-size: 18px;
-    color: var(--p-color);
-    /* letter-spacing: 1px; */
-    line-height: 1.4;
     transition: var(--animation-transition);
     opacity: 0;
-    filter: blur(20px);
-    transform: translateY(-60px);
+    filter: blur(10px);
+    transform: translateX(-60px);
+    background-color: var(--sec-color);
+    color: var(--logo-color);
+    padding: 5px 30px;
 }
 .mainHeading.scrolled p{
     opacity: 1;
     filter: blur(0px);
-    transform: translateY(0px);
+    transform: translateX(0px);
 }
-@media (max-width: 767px) {
+
+@media (max-width: 992px) {
+
+}
+@media (max-width: 992px) {
     .mainHeading{
         text-align: center;
     }
@@ -60,14 +56,14 @@
 }
 @media (max-width: 500px) {
     .mainHeading h2{
-        font-size: 42px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        /* font-size: 42px; */
+        /* padding-top: 5px; */
+        /* padding-bottom: 5px; */
     }
     .mainHeading.scrolled h2{
-        font-size: 26px;
+        /* font-size: 26px; */
     }
     .mainHeading p{
-        font-size: 16px;
+        font-size: 14px;
     }
 }

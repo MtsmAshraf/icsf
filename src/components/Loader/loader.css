@@ -15,6 +15,7 @@
   transition: var(--main-transition);
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    background-color: var(--bg-dark-color);
 }
 .loading.hide{
   height: 0;

@@ -1,6 +1,8 @@
+import About from "@/components/About/About";
 import styles from "./page.module.css";
 import Hero from "@/components/Hero/Hero";
 import Loader from "@/components/Loader/Loader";
+import ServicesCards from "@/components/servicesCards/ServicesCards";
 // import Products from "@/components/Products/Products";
 // import Work from "@/components/Work/Work";
 // import Testimonials from "@/components/Testimonials/Testimonials";
@@ -25,7 +27,9 @@ export default async function Home({
     <div className={styles.page}>
       <Loader lo={locale}></Loader>
       <Hero lo={locale}></Hero>
-      {/* <About lo={locale}></About>
+      <About lo={locale}></About>
+      <ServicesCards lo={locale}></ServicesCards>
+      {/* 
       <Why lo={locale}></Why>
       <Manufacturing lo={locale}></Manufacturing>
       <FireSystem lo={locale}></FireSystem>

@@ -11,7 +11,7 @@ import "swiper/css/bundle";
 import 'swiper/css/navigation'; 
 import 'swiper/css/pagination'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faAnglesDown, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 const Hero = ({
     lo
 }: {
@@ -72,8 +72,7 @@ const Hero = ({
                             ICSF
                         </h1>
                         <p>
-                            
-                            born in 2000 an have around 24 years’ experience on fire fighting and alarm systems sector
+                            born in 2000 and have around 25 years of experience on fire fighting and alarm systems sector
                         </p>
                 </SwiperSlide>
                 <SwiperSlide className={styles.part + " " + styles.two} id='two'>
@@ -99,6 +98,9 @@ const Hero = ({
                 <FontAwesomeIcon icon={faChevronRight} />
             </button>
         </div>
+        <a href="#about">
+            <FontAwesomeIcon icon={faAnglesDown} />
+        </a>
     </section>
   )
 }

@@ -15,7 +15,8 @@
   --sec-semi-color: #282828b0;
   --logo-color: #fff;
   --logo-semi-color: #ffffffbf;
-  --bg-color: #282828;
+  --bg-dark-color: #282828;
+  --bg-color: #fcfcfc;
   --header-bg: #ffffffeb;
   --text-color: #000;
   --p-color: #424242;
@@ -33,7 +34,7 @@
 }
 html{
   scroll-behavior: smooth;
-  scroll-padding: 80px;
+  scroll-padding: 0px;
 }
 body{
   background-color: var(--bg-color);

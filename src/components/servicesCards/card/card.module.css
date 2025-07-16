@@ -1,0 +1,97 @@
+.card{
+    display: flex;
+    align-items: center;
+}
+.card{
+    width: calc((100% - 30px)/ 2);
+}
+.card div:has(>img){
+    width: 100px;
+    aspect-ratio: 1/1;
+    background-color: var(--sec-color);
+    border: 1px solid var(--sec-color);
+}
+.card div:has(>img) img{
+    object-fit: contain;
+    height: 100%;
+}
+.card > div:nth-child(2){
+}
+.card h2{
+    background-color: var(--main-color);
+    color: #fff;
+    width: fit-content;
+    padding: 2px 20px;
+    font-size: 20px;
+    text-transform: lowercase;
+}
+.card h2::first-letter{
+    text-transform: uppercase;
+}
+.card p{
+    background-color: var(--sec-color);
+    background-color: var(--logo-color);
+    color: #fff;
+    color: #000;
+    text-transform: lowercase;
+    font-size: 16px;
+    padding: 2px 20px;
+}
+.card p::first-letter{
+    text-transform: uppercase;
+}
+@media (max-width: 992px) {
+    .card{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .card:nth-child(2),
+    .card:nth-child(4),
+    .card:nth-child(6){
+        flex-direction: row-reverse;
+    }
+    
+    .card:nth-child(2) > div:nth-child(2) h2,
+    .card:nth-child(4) > div:nth-child(2) h2,
+    .card:nth-child(6) > div:nth-child(2) h2{
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .card:nth-child(2) > div:nth-child(2) p,
+    .card:nth-child(4) > div:nth-child(2) p,
+    .card:nth-child(6) > div:nth-child(2) p{
+        text-align: right;
+    }
+}
+@media (max-width: 767px) {
+    .card{
+        width: 100%;
+        flex-direction: column;
+    }
+    .card:nth-child(2),
+    .card:nth-child(4),
+    .card:nth-child(6){
+        flex-direction: column;
+    }
+    .card div:has(>img){
+    }
+    .card > div:nth-child(2) h2{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card:nth-child(2) > div:nth-child(2) h2,
+    .card:nth-child(4) > div:nth-child(2) h2,
+    .card:nth-child(6) > div:nth-child(2) h2{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card > div:nth-child(2) p{
+        text-align: center;
+    }
+    .card:nth-child(2) > div:nth-child(2) p,
+    .card:nth-child(4) > div:nth-child(2) p,
+    .card:nth-child(6) > div:nth-child(2) p{
+        text-align: right;
+    }
+}

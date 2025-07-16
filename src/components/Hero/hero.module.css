@@ -1,12 +1,15 @@
 .hero{
-    /* min-height: 100dvh; */
     padding-top: 90px;
-    /* z-index: 8; */
-    /* overflow: hidden; */
     /* position: relative; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
+}
+.hero > a{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    z-index: 3;
+    color: #fff;
+    font-size: 40px;
 }
 .hero .swiper{
     position: relative;
@@ -45,6 +48,7 @@
     left: 0;
     right: 0;
     width: 100%;
+    backdrop-filter: blur(10px);
     height: 100%;
     z-index: -1;
 }
