@@ -3,9 +3,6 @@ import React from 'react'
 import styles from "./services-cards.module.css"
 import Image from 'next/image'
 import Card from './card/card'
-import { useTranslations } from 'use-intl'
-import heroServices ,{ HeroService } from './servicesHeroData'
-import { Link } from '@/i18n/routing'
 import design from "../../../public/imgs/icons8-design-100.png"
 import supply from "../../../public/imgs/icons8-supply-100.png"
 import installation from "../../../public/imgs/icons8-installation-64.png"

@@ -3,7 +3,7 @@ import styles from "./about.module.css"
 // import MainBtn from '../MainBtn/MainBtn'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import { useTranslations } from 'next-intl'
+// import { useTranslations } from 'next-intl'
 // import { Link } from '@/i18n/routing'
 import Logo from '../Logo/logo'
 const About = ({
@@ -11,7 +11,7 @@ const About = ({
 }: {
     lo: string
 }) => {
-    const t = useTranslations('HomePage');
+    // const t = useTranslations('HomePage');
     // const tBtn = useTranslations('MainBtn');
   return (
     <section id='about' className={lo === "ar"? styles.about + " " + styles.ar: styles.about}>
