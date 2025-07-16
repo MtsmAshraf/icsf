@@ -17,7 +17,7 @@ const ServicesCards = ({
     lo: string
 }) => {
   return (
-    <div className={lo === "en" ? styles.servicesCards + " " + styles.en : styles.servicesCards}>
+    <section className={lo === "en" ? styles.servicesCards + " " + styles.en : styles.servicesCards}>
         <div className={styles.overlay}></div>
         <div className="container">
             <MainHeading>
@@ -119,7 +119,7 @@ const ServicesCards = ({
                 </Card>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 
