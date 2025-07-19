@@ -26,7 +26,7 @@ const Clients = ({
         <MainHeading>
             {/* <h2>{t("MainHeading.H2")}</h2> */}
             <h2>Clients</h2>
-            <p>Here are some of clients</p>
+            {/* <p>Here are some of clients</p> */}
         </MainHeading>
         <div className={styles.swiper}>
             <Swiper

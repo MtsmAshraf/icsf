@@ -20,8 +20,8 @@ const ProductCards = ({
                     return(
                         <ProductCard key={product.id}>
                             <div className={parseInt(product.id) % 2 !== 0 ? styles.odd + " " + styles.productCard : styles.productCard}>
-                                <div className={styles.cardImg}>
-                                    <Image src={product.src} alt='Product Image'></Image>
+                                <div className={styles.cardImg + ` hexagon`}>
+                                    <Image src={product.src} alt='Product Image' ></Image>
                                 </div>
                                 <p>
                                     {/* {t(`ProductsCards.${product.id}`)} */}
@@ -35,7 +35,7 @@ const ProductCards = ({
                         product.category === category && 
                         <ProductCard key={product.id}>
                             <div className={styles.productCard}>
-                                <div className={styles.cardImg}>
+                            <div className={styles.cardImg + ` hexagon`}>
                                     <Image src={product.src} alt='Product Image'></Image>
                                 </div>
                                 <p>

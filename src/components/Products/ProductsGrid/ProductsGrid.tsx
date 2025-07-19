@@ -28,72 +28,35 @@ const ProductsGrid = ({
                     <div className={styles.icon}>
                         <Image src={all} alt='all icon'></Image>
                     </div>
-                    <span>{t('Filter.All')}</span>
+                    <span>
+                        {t('Filter.All')}
+                    </span>
                 </label>
                 <input onChange={(e) => setSelectedCategory(e.target.value)} defaultChecked type="radio" id='all' name='grid-filter' value={""}/>
             </div>
             <div>
-                <label htmlFor="body">
+                <label htmlFor="cat-1">
                     <div className={styles.icon}>
-                        <Image src={body} alt='body icon'></Image>
+                        <Image src={body} alt='cat-1 icon'></Image>
                     </div>
-                    <span>{t('Filter.Body')}</span>
+                    <span>
+                        {/* {t('Filter.Body')} */}
+                        Cat 1
+                    </span>
                 </label>
-                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='body' name='grid-filter' value={"body"}/>
+                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='cat-1' name='grid-filter' value={"cat-1"}/>
             </div>
             <div>
-                <label htmlFor="head">
+                <label htmlFor="cat-2">
                     <div className={styles.icon}>
                         <Image src={helmet} alt='helmet icon'></Image>
                     </div>
-                    <span>{t('Filter.Head')}</span>
+                    <span>
+                        {/* {t('Filter.Head')} */}
+                        Cat 2
+                    </span>
                 </label>
-                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='head' name='grid-filter' value={"head"}/>
-            </div>
-            <div>
-                <label htmlFor="eyes">
-                    <div className={styles.icon}>
-                        <Image src={eyes} alt='eyes icon'></Image>
-                    </div>
-                    <span>{t('Filter.Eyes')}</span>
-                </label>
-                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='eyes' name='grid-filter' value={"eyes"}/>
-            </div>
-            <div>
-                <label htmlFor="feet">
-                    <div className={styles.icon}>
-                        <Image src={feet} alt='feet icon'></Image>
-                    </div>
-                    <span>{t('Filter.Feet')}</span>
-                </label>
-                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='feet' name='grid-filter' value={"feet"}/>
-            </div>
-            <div>
-                <label htmlFor="hands">
-                    <div className={styles.icon}>
-                        <Image src={hands} alt='hands icon'></Image>
-                    </div>
-                    <span>{t('Filter.Hands')}</span>
-                </label>
-                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='hands' name='grid-filter' value={"hands"}/>
-            </div>
-            <div>
-                <label htmlFor="traffic">
-                    <div className={styles.icon}>
-                        <Image src={traffic} alt='traffic icon'></Image>
-                    </div>
-                    <span>{t('Filter.Traffic')}</span>
-                </label>
-                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='traffic' name='grid-filter' value={"traffic"}/>
-            </div>
-            <div>
-                <label htmlFor="paper">
-                    <div className={styles.icon}>
-                        <Image src={paper} alt='paper icon'></Image>
-                    </div>
-                    <span>{t('Filter.Paper')}</span>
-                </label>
-                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='paper' name='grid-filter' value={"paper"}/>
+                <input onChange={(e) => setSelectedCategory(e.target.value)} type="radio" id='cat-2' name='grid-filter' value={"cat-2"}/>
             </div>
         </div>
         <ProductCards category={selectedCategory}></ProductCards>

@@ -8,7 +8,7 @@ import Fields from "@/components/Fields/fields";
 import Clients from "@/components/Clients/Clients";
 // import Contact from "@/components/Contact/Contact";
 import Where from "@/components/Where/Where";
-// import Products from "@/components/Products/Products";
+import Products from "@/components/Products/Products";
 // import Work from "@/components/Work/Work";
 // import Testimonials from "@/components/Testimonials/Testimonials";
 // import Contact from "@/components/Contact/Contact";
@@ -42,7 +42,7 @@ export default async function Home({
       <Manufacturing lo={locale}></Manufacturing>
       <FireSystem lo={locale}></FireSystem>
       <Fields lo={locale}></Fields> */}
-      {/* <Products lo={locale}></Products> */}
+      <Products lo={locale}></Products>
       {/* <Work lo={locale}></Work>
       <Testimonials parentEl={"home"} lo={locale}></Testimonials> */}
       <Where lo={locale}></Where>

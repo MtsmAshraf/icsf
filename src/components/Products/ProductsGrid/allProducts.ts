@@ -89,378 +89,132 @@ export type Product = {
 }
 
 const products : Product[] = [
-    {
-        id: "1",
-        name: "أفرول عمال",
-        src: image1,
-        category: "body"
+    { 
+        id: "1", 
+        name: "Fire Fighting Pump", 
+        src: image1, 
+        category: "cat-1" 
     },
-    {
-        id: "2",
-        name: "بدلة اقتحام حريق",
-        src: image14,
-        category: "body"
+    { 
+        id: "2", 
+        name: "Fire Fighting Cabinets", 
+        src: image1, 
+        category: "cat-1" 
     },
-    {
-        id: "3",
-        name: "بدلة مقاومة الحريق",
-        src: image15,
-        category: "body"
+    { 
+        id: "3", 
+        name: "Hose reels systems", 
+        src: image1 , 
+        category: "cat-1" 
     },
-    {
-        id: "4",
-        name: "بدلة تلاجة",
-        src: image16,
-        category: "body"
+    { 
+        id: "4", 
+        name: "Automatic Sprinklers", 
+        src: image1 , 
+        category: "cat-1" 
     },
-    {
-        id: "5",
-        name: "بنطلون جينز",
-        src: image17,
-        category: "body"
+    { 
+        id: "5", 
+        name: "fire hose (canvas)", 
+        src: image1 , 
+        category: "cat-1" 
     },
-    {
-        id: "6",
-        name: "بدلة جينز للأعمال الشاقة",
-        src: image18,
-        category: "body"
+    { 
+        id: "6", 
+        name: "pvc fire hose", 
+        src: image1 , 
+        category: "cat-1" 
     },
-    {
-        id: "7",
-        name: "تيشيرت بولو",
-        src: image19,
-        category: "body"
+    { 
+        id: "7", 
+        name: "landing valves", 
+        src: image1 , 
+        category: "cat-1" 
     },
-    {
-        id: "8",
-        name: "تيشيرت بولو",
-        src: image20,
-        category: "body"
+    { 
+        id: "8", 
+        name: "Fire nozzles", 
+        src: image1 , 
+        category: "cat-1" 
     },
-    {
-        id: "9",
-        name: "بدلة قطعتين",
-        src: image21,
-        category: "body"
+    { 
+        id: "9", 
+        name: "Siamese connection", 
+        src: image1 , 
+        category: "cat-1" 
     },
-    {
+    { 
         id: "10",
-        name: "أطقم موحدة",
-        src: image22,
-        category: "body"
-    },
-    {
+         name: "water monitors", 
+         src: image1    , 
+         category: "cat-1" 
+        },
+    { 
         id: "11",
-        name: "كاب جبردين",
-        src: image23,
-        category: "head"
-    },
-    {
+         name: "foam monitors", 
+         src: image1    , 
+         category: "cat-1" 
+        },
+    { 
         id: "12",
-        name: "كمامة جلد صيني أتربة np305 - واحد فلتر",
-        src: image24,
-        category: "head"
-    },
-    {
+         name: "fire search extinguishers", 
+         src: image1    , 
+         category: "cat-1" 
+        },
+    { 
         id: "13",
-        name: "كمامة جلد صيني أتربة - اتنين فلتر",
-        src: image25,
-        category: "head"
-    },
-    {
+         name: "fm200 cylinders", 
+         src: image1    , 
+         category: "cat-1" 
+        },
+    { 
+        id: "14",
+         name: "kitchen hood systems cylinders", 
+         src: image14, 
+         category: "cat-1" 
+        },
+    { 
         id: "15",
-        name: "سدادة أذن",
-        src: image27,
-        category: "head"
-    },
-    // {
-    //     id: "17",
-    //     name: "hands protection",
-    //     src: image29,
-    //     category: "head"
-    // },
-    {
+         name: "45 kg co2 cylinders", 
+         src: image15, 
+         category: "cat-1" 
+        },
+    { 
+        id: "16",
+         name: "co2 portable extinguishers", 
+         src: image16, 
+         category: "cat-2" 
+        },
+    { 
+        id: "17",
+         name: "Fire Hydrants", 
+         src: image17, 
+         category: "cat-2" 
+        },
+    { 
         id: "18",
-        name: "خوذة 3M",
-        src: image30,
-        category: "head"
-    },
-    // {
-    //     id: "19",
-    //     name: "traffic services",
-    //     src: image31,
-    //     category: "head"
-    // },
-    {
+         name: "Fire Extinguishers powders", 
+         src: image18, 
+         category: "cat-2" 
+        },
+    { 
+        id: "19",
+         name: "fire alarm (conventional –addressable)", 
+         src: image19, 
+         category: "cat-2" 
+        },
+    { 
         id: "20",
-        name: "خوذة msa",
-        src: image32,
-        category: "head"
-    },
-    {
+         name: "codesec system", 
+         src: image20, 
+         category: "cat-2" 
+        },
+    { 
         id: "21",
-        name: "خوذة msa ألوان",
-        src: image33,
-        category: "head"
-    },
-    {
-        id: "22",
-        name: "خوذة jsp",
-        src: image34,
-        category: "head"
-    },
-    {
-        id: "23",
-        name: "حرملة جينز",
-        src: image35,
-        category: "head"
-    },
-    {
-        id: "24",
-        name: "حرملة جلد كروم",
-        src: image36,
-        category: "head"
-    },
-    {
-        id: "26",
-        name: "قناع ٦٨٠٠ 3M",
-        src: image38,
-        category: "head"
-    },
-    {
-        id: "27",
-        name: "كاتم صوت",
-        src: image39,
-        category: "head"
-    },
-    {
-        id: "28",
-        name: "كاتم صوت",
-        src: image40,
-        category: "head"
-    },
-    {
-        id: "29",
-        name: "وش لحام نص خوذة",
-        src: image41,
-        category: "head"
-    },
-    {
-        id: "30",
-        name: "وش لحام",
-        src: image42,
-        category: "head"
-    },
-    {
-        id: "34",
-        name: "حاجز سوستة حديد",
-        src: image46,
-        category: "traffic"
-    },
-    {
-        id: "35",
-        name: "حاجز سوستة حديد",
-        src: image47,
-        category: "traffic"
-    },
-    {
-        id: "36",
-        name: "حاجز سوستة بلاستيك",
-        src: image48,
-        category: "traffic"
-    },
-    {
-        id: "37",
-        name: "مطب صناعي",
-        src: image49,
-        category: "traffic"
-    },
-    {
-        id: "38",
-        name: "قمع جزرة",
-        src: image50,
-        category: "traffic"
-    },
-    {
-        id: "39",
-        name: "مصد سيارات",
-        src: image51,
-        category: "traffic"
-    },
-    {
-        id: "41",
-        name: "مصد سيارات",
-        src: image53,
-        category: "traffic"
-    },
-    {
-        id: "42",
-        name: "قمع تشريفة",
-        src: image54,
-        category: "traffic"
-    },
-    {
-        id: "43",
-        name: "قمع صلب",
-        src: image55,
-        category: "traffic"
-    },
-    {
-        id: "44",
-        name: "قمع مرن",
-        src: image56,
-        category: "traffic"
-    },
-    {
-        id: "45",
-        name: "مرآة محدبة ومقعرة",
-        src: image57,
-        category: "traffic"
-    },
-    {
-        id: "46",
-        name: "مرآة مقعرة - ٦٠سم/٨٠سم/١ متر",
-        src: image58,
-        category: "traffic"
-    },
-    {
-        id: "47",
-        name: "مصد عمدان",
-        src: image59,
-        category: "traffic"
-    },
-    {
-        id: "50",
-        name: "حاجز طريق نيو جيرسي بلاستيك",
-        src: image62,
-        category: "traffic"
-    },
-    {
-        id: "51",
-        name: "حاجز مرور حديد",
-        src: image63,
-        category: "traffic"
-    },
-    {
-        id: "52",
-        name: "محدب طرق",
-        src: image64,
-        category: "traffic"
-    },
-    {
-        id: "61",
-        name: "مطب كابلات",
-        src: image73,
-        category: "traffic"
-    },
-    // {
-    //     id: "53",
-    //     name: "traffic services",
-    //     src: image65,
-    //     category: "eyes"
-    // },
-    {
-        id: "54",
-        name: "نضارة 3M شفافة",
-        src: image66,
-        category: "eyes"
-    },
-    {
-        id: "55",
-        name: "نضارة 3M غامقة",
-        src: image67,
-        category: "eyes"
-    },
-    {
-        id: "56",
-        name: "أوفر جلاس",
-        src: image68,
-        category: "eyes"
-    },
-    {
-        id: "57",
-        name: "نضارة قلاب",
-        src: image69,
-        category: "eyes"
-    },
-    {
-        id: "58",
-        name: "نضارة تايواني شفافة",
-        src: image70,
-        category: "eyes"
-    },
-    {
-        id: "59",
-        name: "نضارة تايواني غامقة",
-        src: image71,
-        category: "eyes"
-    },
-    {
-        id: "60",
-        name: "نظارة uvex",
-        src: image72,
-        category: "eyes"
-    },
-    {
-        id: "31",
-        name: "كمامة 3m n95 بفلتر كود 8822",
-        src: image43,
-        category: "paper"
-    },
-    {
-        id: "32",
-        name: "كمامة ورقية kn95 بفلتر",
-        src: image44,
-        category: "paper"
-    },
-    {
-        id: "33",
-        name: "كمامة ورقية kn95 بدون فلتر",
-        src: image45,
-        category: "paper"
-    },
-    {
-        id: "62",
-        name: "أفرول ورقي",
-        src: image74,
-        category: "paper"
-    },
-    {
-        id: "63",
-        name: "أفرول ورقي",
-        src: image75,
-        category: "paper"
-    },
-    {
-        id: "64",
-        name: "كمامة ورقية أطباء",
-        src: image76,
-        category: "paper"
-    },
-    {
-        id: "65",
-        name: "كمامة ورقية أطباء",
-        src: image77,
-        category: "paper"
-    },
-    {
-        id: "66",
-        name: "دقانة ورقية",
-        src: image78,
-        category: "paper"
-    },
-    {
-        id: "67",
-        name: "أوفر هيد - Overhead",
-        src: image79,
-        category: "paper"
-    },
-    {
-        id: "68",
-        name: "أوفر شوز - Overshoes",
-        src: image80,
-        category: "paper"
-    },
+         name: "ATS systems", 
+         src: image21, 
+         category: "cat-2"
+         }
 ]
 
 export default products;
