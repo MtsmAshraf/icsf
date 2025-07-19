@@ -3,6 +3,8 @@ import styles from "./products-cards.module.css"
 import ProductCard from './ProductCard/ProductCard'
 import allProducts, { Product } from "../allProducts"
 import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
 // import { useTranslations } from 'next-intl'
 const ProductCards = ({
     category
@@ -21,6 +23,12 @@ const ProductCards = ({
                         <ProductCard key={product.id}>
                             <div className={parseInt(product.id) % 2 !== 0 ? styles.odd + " " + styles.productCard : styles.productCard}>
                                 <div className={styles.cardImg + ` hexagon`}>
+                                    <a href="#contact">
+                                        <FontAwesomeIcon icon={faPhone} />
+                                        <span>
+                                            Order
+                                        </span>
+                                    </a>
                                     <Image src={product.src} alt='Product Image' ></Image>
                                 </div>
                                 <p>
@@ -36,6 +44,9 @@ const ProductCards = ({
                         <ProductCard key={product.id}>
                             <div className={styles.productCard}>
                             <div className={styles.cardImg + ` hexagon`}>
+                                <a href="#contact">
+                                    Order
+                                </a>
                                     <Image src={product.src} alt='Product Image'></Image>
                                 </div>
                                 <p>
