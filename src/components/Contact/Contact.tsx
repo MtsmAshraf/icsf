@@ -3,9 +3,10 @@ import React, { useEffect, useRef, useState } from 'react'
 import styles from "./contact.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { useTranslations } from 'next-intl'
 import MainHeading from '../MainHeading/MainHeading'
+// import SocialUl from '../SocialUl/SocialUl'
 const Contact = ({
   lo
 }: {
@@ -53,127 +54,80 @@ const Contact = ({
             {t("Contact.MainHeading.H2")}
           </h2>
           <p>
-            Here are our location, phone numbers and social media links
+            Here are our phone numbers and social media links
           </p>
         </MainHeading>
         <div className="container">
           <div className={styles.info}>
               <div>
-                {/* <h3>
+                <div>
+                  <div>
+                    <a target='_blank' className={styles.iconLink + ` hexagon`} href="tel:+201004384423">
+                      <FontAwesomeIcon icon={faPhone} />
+                    </a>
+                <h3>
                   Phone
-                </h3> */}
-                <div>
-                  <div>
-                    <a target='_blank' className={styles.iconLink} href="tel:+201004893305">
-                      <FontAwesomeIcon icon={faPhone} />
-                    </a>
+                </h3>
                     <div>
-                      <span>
+                      {/* <span>
                           {t('Contact.Contacts.Management')}
-                      </span>  
-                      <a target='_blank' href="tel:+201004893305">
-                        +201004893305
+                      </span>   */}
+                      <a target='_blank' href="tel:+201004384423">
+                        +201004384423
                       </a>
                     </div>
                   </div>
-                  <div>
-                    <a target='_blank' className={styles.iconLink} href="tel:+201003117396">
-                      <FontAwesomeIcon icon={faPhone} />
-                    </a>
-                    <div>
-                      <span>
-                        {t('Contact.Contacts.Exhibition')}
-                      </span>  
-                      <a target='_blank' href="tel:+201003117396">
-                        +201003117396
-                      </a>
-                    </div>
-                  </div>  
-                  <div>
-                    <a target='_blank' className={styles.iconLink} href="tel:+201025855588">
-                      <FontAwesomeIcon icon={faPhone} />
-                    </a>
-                    <div>
-                      <span>
-                          {t('Contact.Contacts.Sales')}
-                      </span>  
-                      <a target='_blank' href="tel:+201025855588">
-                        +201025855588
-                      </a>
-                    </div>
-                  </div>  
                 </div>
               </div>
               <div>
-                {/* <h3>
+                <div>
+                  <div>
+                    <a target='_blank' className={styles.iconLink + ` hexagon`} href="https://wa.me/201004384423">
+                      <FontAwesomeIcon icon={faWhatsapp} />
+                    </a>
+                <h3>
                   Whatsapp
-                </h3> */}
-                <div>
-                  <div>
-                    <a target='_blank' className={styles.iconLink} href="https://wa.me/201004893305">
-                      <FontAwesomeIcon icon={faWhatsapp} />
-                    </a>
+                </h3>
                     <div>
-                      <span>
+                      {/* <span>
                           {t('Contact.Contacts.Management')}
-                        </span>  
-                      <a target='_blank' href="https://wa.me/201004893305">
-                        +201004893305
-                      </a>
-                    </div>
-                  </div>  
-                  <div>
-                    <a target='_blank' className={styles.iconLink} href="https://wa.me/201003117396">
-                      <FontAwesomeIcon icon={faWhatsapp} />
-                    </a>
-                    <div>
-                      <span>
-                        {t('Contact.Contacts.Exhibition')}
-                      </span>  
-                      <a target='_blank' href="https://wa.me/201003117396">
-                        +201003117396
-                      </a>
-                    </div>
-                  </div>  
-                  <div>
-                    <a target='_blank' className={styles.iconLink} href="https://wa.me/201025855588">
-                      <FontAwesomeIcon icon={faWhatsapp} />
-                    </a>
-                    <div>
-                      <span>
-                          {t('Contact.Contacts.Sales')}
-                        </span>  
-                      <a target='_blank' href="https://wa.me/201025855588">
-                        +201025855588
+                        </span>   */}
+                      <a target='_blank' href="https://wa.me/201004384423">
+                        +201004384423
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
               <div>
-                {/* <h3>
-                  Email
-                </h3> */}
                 <div>
                   <div>
-                    <a target='_blank' className={styles.iconLink} href="mailto:assemaforcompressor@gmail.com?subject=AlAsema-website">
+                    <a target='_blank' className={styles.iconLink + ` hexagon`} href="mailto:assemaforcompressor@gmail.com?subject=AlAsema-website">
                       <FontAwesomeIcon icon={faEnvelope} />
                     </a>
+                <h3>
+                  Email
+                </h3>
                     <div>
-                      <a target='_blank' href="mailto:Abduallah.almhdy@gmail.com?subject=Al-Mahdy-website">
-                        Abduallah.almhdy@gmail.com
+                      <a target='_blank' href="mailto:username@example.com?subject=ICSF-website">
+                        username@example.com
                       </a>
                     </div>
                   </div>  
                 </div>
               </div>
           </div>
-        </div>
-        {/* <div className={styles.socialMedia}>
-          <div>
-            <SocialUl></SocialUl>
+          <div className={styles.socialMedia}>
+                <a href="https://www.facebook.com/profile.php?id=100064239420433">
+                  <FontAwesomeIcon icon={faFacebookF} className='hexagon'  />
+                  <span>ICSF</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100057528936336">
+                  <FontAwesomeIcon icon={faFacebookF} className='hexagon'  />
+                  <span>Fire Link</span>
+                </a>
           </div>
-        </div> */}
+        </div>
     </section>
   )
 }
