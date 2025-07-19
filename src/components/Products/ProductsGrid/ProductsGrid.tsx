@@ -5,12 +5,7 @@ import ProductCards from './ProductCards/ProductCards'
 import Image from 'next/image'
 import all from "../../../../public/imgs/products-icons/safety-all.svg"
 import body from "../../../../public/imgs/products-icons/body.svg"
-import feet from "../../../../public/imgs/products-icons/feet.svg"
-import eyes from "../../../../public/imgs/products-icons/eyes.svg"
 import helmet from "../../../../public/imgs/products-icons/helmet.svg"
-import hands from "../../../../public/imgs/products-icons/hands.svg"
-import traffic from "../../../../public/imgs/products-icons/traffic.svg"
-import paper from "../../../../public/imgs/products-icons/paper.svg"
 import { useTranslations } from 'next-intl'
 
 const ProductsGrid = ({
