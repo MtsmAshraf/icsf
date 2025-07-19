@@ -42,8 +42,8 @@
     background-color: var(--sec-color);
     color: #fff;
     padding: 10px;
-    box-shadow: var(--main-shadow), var(--sec-shadow);
-    box-shadow: var(--main-shadow), 3px 3px 0px 1px var(--main-color);
+    /* box-shadow: var(--main-shadow), var(--sec-shadow); */
+    /* box-shadow: var(--main-shadow), 3px 3px 0px 1px var(--main-color); */
     transition: var(--main-transition);
     text-transform: capitalize;
     /* font-family: "Tajawal", sans-serif; */
